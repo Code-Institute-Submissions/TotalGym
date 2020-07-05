@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Roboto&display=swap');
+
+/*
+Logo color #3aaa35
+*/
+
+body {
+  background-color: rgb(34, 36, 34);
+  color: #fafafa;
+}
+
+/************************** Navigation *******************************/
+
+.navbar {
+  padding: 5px;
+  background-color:  rgba(34, 36, 34,0.8);
+}
+
+
+.navbar-nav li {
+  padding-right: 45px;
+}
+
+.nav-link {
+  font-size: 20px;
+  font-family: 'krona One', sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  color: white !important;
+  transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+}
+
+.nav-item a:hover {
+    color: #10ad25 !important;
+}
