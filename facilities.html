@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-<head>
-  <title>Total Gym</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="assets/css/style.css">
-</head>
+<html lang="en">
+  <head>
+    <title>Total Gym</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
   <body>
     <header>
       <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
@@ -38,15 +38,238 @@
         </div>
       </nav>
     </header>
-    <section>
 
-    </section>
-    <section>
+    <!-- Facilities section containing cards and modals -->
+    <section class=facilites>
+      <div class="container-fluid cards">
+        <div class="row ">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card">
+              <img src="assets/images/cardio.jpg" class="card-img-top" alt="Personal Trainer">
+              <div class="card-body align-self-center uppercase text-light">
+                <!-- Button trigger modal -->
+                <a data-toggle="modal" data-target="#cardio">
+                  cardio
+                </a>
+                <!-- Modal -->
+                <div class="modal fade" id="cardio" tabindex="-1" role="dialog" aria-labelledby="cardioTitle" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="cardioTitle">Cardio</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="row">
+                          <div class="col-12 col-lg-6">
+                            <img src="assets/images/cardio.jpg" class="card-img-top" alt="Personal Trainer">
+                          </div>
+                          <div class="col-12 col-lg-6 py-2">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card">
+              <img src="assets/images/free weights.jpg" class="card-img-top" alt="Personal Trainer">
+              <div class="card-body align-self-center uppercase text-light">
+                <!-- Button trigger modal -->
+                <a data-toggle="modal" data-target="#freeWeights">
+                  Free weights
+                </a>
+                <!-- Modal -->
+                <div class="modal fade" id="freeWeights" tabindex="-1" role="dialog" aria-labelledby="freeWeightsTitle" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="freeWeightsTitle">free weights</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="row">
+                          <div class="col-12 col-lg-6">
+                            <img src="assets/images/free weights.jpg" class="card-img-top" alt="Personal Trainer">
+                          </div>
+                          <div class="col-12 col-lg-6 py-2">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card">
+              <img src="assets/images/weight Machines.jpg" class="card-img-top" alt="Personal Trainer">
+              <div class="card-body align-self-center uppercase text-light">
+                <!-- Button trigger modal -->
+                <a data-toggle="modal" data-target="#weightMachines">
+                  weight machines
+                </a>
+                <!-- Modal -->
+                <div class="modal fade" id="weightMachines" tabindex="-1" role="dialog" aria-labelledby="weightMachinesTitle" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="weightMachinesTitle">Weight Machines</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="row">
+                          <div class="col-12 col-lg-6">
+                            <img src="assets/images/weight Machines.jpg" class="card-img-top" alt="Personal Trainer">
+                          </div>
+                          <div class="col-12 col-lg-6 py-2">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card">
+              <img src="assets/images/gymstudio.jpg" class="card-img-top" alt="Personal Trainer">
+              <div class="card-body align-self-center uppercase text-light">
+                <!-- Button trigger modal -->
+                <a data-toggle="modal" data-target="#studio">
+                  studio
+                </a>
+                <!-- Modal -->
+                <div class="modal fade" id="studio" tabindex="-1" role="dialog" aria-labelledby="studioTitle" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="studioTitle">studio</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="row">
+                          <div class="col-12 col-lg-6">
+                            <img src="assets/images/gymstudio.jpg" class="card-img-top" alt="Personal Trainer">
+                          </div>
+                          <div class="col-12 col-lg-6 py-2">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card">
+              <img src="assets/images/refreshments.jpg" class="card-img-top" alt="Personal Trainer">
+              <div class="card-body align-self-center uppercase text-light">
+                <!-- Button trigger modal -->
+                <a data-toggle="modal" data-target="#refreshments">
+                  refreshments
+                </a>
+                <!-- Modal -->
+                <div class="modal fade" id="refreshments" tabindex="-1" role="dialog" aria-labelledby="refreshmentsTitle" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="refreshmentsTitle">refreshments</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="row">
+                          <div class="col-12 col-lg-6">
+                            <img src="assets/images/refreshments.jpg" class="card-img-top" alt="Personal Trainer">
+                          </div>
+                          <div class="col-12 col-lg-6 py-2">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card">
+              <img src="assets/images/poolandspasquare.jpg" class="card-img-top" alt="Personal Trainer">
+              <div class="card-body align-self-center uppercase text-light d-block">
+                <!-- Button trigger modal -->
+                <a data-toggle="modal" data-target="#poolAndSpa" >
+                  pool & spa
+                </a>
 
-    </section>
-    <section>
+                <!-- Modal -->
+                <div class="modal fade" id="poolAndSpa" tabindex="-1" role="dialog" aria-labelledby="poolAndSpaTitle" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="poolAndSpaTitle">pool & spa</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="row">
+                          <div class="col-12 col-lg-6">
+                            <img src="assets/images/poolandspa.jpg" class="card-img-top" alt="Personal Trainer">
+                          </div>
+                          <div class="col-12 col-lg-6 py-2">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>   <!-- facilites -->
 
-    </section>
     <footer>
       <div class="container-fluid no-gutter py-4">
         <div class="row">
@@ -113,7 +336,6 @@
             </div>
           </div>
         </div>
-
       </div>
     </footer>
   </body>

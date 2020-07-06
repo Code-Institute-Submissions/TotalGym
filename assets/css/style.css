@@ -199,6 +199,76 @@ hr {
   }
 }
 
+/************************** CARDS *******************************/
+
+.cards {
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+.card {
+  margin: 40px 40px 0px 40px;
+  background-color: rgba(34, 36, 34, 0.4);
+  border: 0;
+}
+
+ /* .card-img-top {
+
+    height: 400;
+    object-fit: cover;
+} */
+
+
+.card-body {
+  padding: 0 0 5px 0;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.card h2 {
+  font-family: 'krona One', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  color: #fafafa;
+}
+
+.card-body a {
+  font-family: 'krona One', sans-serif;
+  text-align: center;
+  color: #fafafa;
+  padding: 5px;
+  border: 1pt solid #899988;
+  letter-spacing: 1px;
+  display: block;
+}
+
+.card-body p {
+  font-family: 'Roboto', sans-serif;
+}
+
+@media screen and (max-width: 800px) {
+  .card {
+    margin: 10px 5px 5px 10px;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .card {
+    margin: 10px 0;
+  }
+}
+
+/************************** MODALS *******************************/
+
+.modal-content {
+  background-color: rgba(34, 36, 34, 0.8);
+  color: #fafafa;
+}
+
+.modal-header .close {
+  color: #fff;
+}
+
 /************************** Footer *******************************/
 
 footer {
