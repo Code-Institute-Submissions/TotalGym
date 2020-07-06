@@ -142,6 +142,63 @@ hr {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
 }
 
+/************************** About *******************************/
+.home-image-1 {
+  object-fit: cover;
+  height: 50vh;
+  width: 100%;
+}
+
+.home-image-2 {
+  object-fit: cover;
+  height: 50vh;
+  width: 100%;
+}
+
+.about p {
+  font-size: 24px;
+  font-family: Roboto, sans-serif;
+}
+
+
+
+@media screen and (max-width: 800px) {
+  .home-image-1 {
+    object-fit: cover;
+    height: 310px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .home-image-1 {
+    object-fit: cover;
+    height: 300px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .home-image-2 {
+    object-fit: cover;
+    height: 310px;
+    width: 100%;
+    object-position: -150px;
+  }
+  .about p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .home-image-2 {
+    object-fit: cover;
+    object-position: -160px;
+    height: 300px;
+    width: 100%;
+  }
+}
+
 /************************** Footer *******************************/
 
 footer {
