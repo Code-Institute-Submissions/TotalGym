@@ -9,7 +9,33 @@ body {
   color: #fafafa;
 }
 
-/************************** Navigation *******************************/
+/************************** General *******************************/
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.center {
+  text-align: center;
+}
+
+hr {
+  width: 20%;
+  border-color: #218838;
+  border-width: 2px;
+}
+
+.cta {
+    font-family: 'krona One', sans-serif;
+    text-shadow: 2px 2px black;
+    text-align: center;
+}
+
+.btn-success {
+  background-color: #3aaa35;
+}
+
+/************************** Header / Navigation *******************************/
 
 .navbar {
   padding: 5px;
@@ -35,4 +61,110 @@ body {
 
 .nav-item a:hover {
     color: #10ad25 !important;
+}
+
+/************************** HOME *******************************/
+
+/************************** Hero Image *******************************/
+.hero-image {
+  background-image: url(../images/hero.jpg);
+  height: 80vh;
+  width: 100vw;
+  background-size: cover;
+  margin-top: 80px;
+  position: relative;
+  background-position: 0px 80px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+@media screen and (max-width: 800px) {
+  .hero-image {
+    background-position: -120px 80px;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .hero-image {
+  background-position: -100px 80px;
+  background-size:auto;
+  }
+}
+
+
+.hero-cta {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero-cta h1 {
+  font-size: 2rem;
+}
+
+.hero-cta p {
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 600px) {
+  .hero-cta h1 {
+    font-size: 4rem;
+  }
+}
+
+/************************** Footer *******************************/
+
+footer {
+  background-color:  rgb(34, 36, 34);
+  color: #fafafa;
+  font-family: 'krona One', sans-serif;
+}
+
+.location, .social, .opening-hours  {
+  border: 1pt solid #fafafa;
+  border-radius: 5%;
+}
+
+.address {
+  color: #fafafa;
+  font-family: 'krona One', sans-serif;
+  margin: 20px 0;
+  padding: 10px 0 0 10px;
+}
+
+
+.social li a i {
+  width: 40px;
+  height: 40px;
+  padding: 17px 0;
+  border-radius: 50%;
+  font-size: 20px;
+  line-height: 4px;
+  text-align: center;
+  color: #fafafa;
+  background: black;
+  transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+}
+
+.list-inline-item {
+  margin: 0 20px;
+}
+
+.social li a i:hover {
+  color: #10ad25;
+}
+
+
+#opening-hours-table {
+  margin: 20px 0;
+  font-size: 15px;
+}
+
+#opening-hours-table td{
+  padding: 10px 15px;
+  border: 1px solid #fafafa;
 }
