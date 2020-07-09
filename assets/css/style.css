@@ -280,7 +280,6 @@ hr {
   text-align: center;
 }
 
-
 .table {
   color: #fafafa;
   margin-bottom: 0;
@@ -298,13 +297,7 @@ hr {
   background-color: green;
   border: 1px solid #fafafa;
   min-width: 125px;
-  z-index: 3;
 }
-
-.class-timetable td {
-  z-index: -3;
-}
-
 
 .sticky-cell {
   position: sticky;
@@ -314,108 +307,113 @@ hr {
 .class-timetable .first-col  {
   left: -10px;
   background-color: green;
-  z-index: 0;
+  z-index: 4;
   min-width: 125px;
 }
 
-
-th.top-left {
-  position: absolute;
-  left: 16px;
-  top: 1px;
-  min-width: 152px;
-  padding: 0.75rem;
-  z-index: 4;
-  border-left: 0;
-  color: green;
-}
-
-td.second-col, th.second-col {
+th.second-col {
   padding-left: 30px;
   padding-right: 30px;
   }
 
-
-  @media screen and (max-width: 1690px) {
-    th.top-left{
-      min-width: 132px;
-      }
-  }
-
-  @media screen and (max-width: 1580px) {
-    th.top-left{
-      min-width: 120px;
-      }
-  }
-
-  @media screen and (max-width: 1560px) {
-    th.top-left{
-      min-width: 116px;
-      }
-  }
-
   @media screen and (max-width: 1500px) {
-    td.second-col, th.second-col {
+    th.second-col {
       padding-left: 110px;
-      padding-right: 30px;
       }
   }
 
-  @media screen and (max-width: 1300px) {
-    td.second-col, th.second-col {
-      padding-left: 215px;
-      padding-right: 30px;
+/* Laptop with MDPI */
+  @media screen and (max-width: 1280px) {
+    th.second-col {
+      padding-left: 15vw;
       }
   }
 
-  @media screen and (max-width: 1140px) {
-    td.second-col, th.second-col {
-      padding-left: 311px;
-      padding-right: 30px;
+/* IPAD PRO 12.5*/
+  @media screen and (max-width: 1024px) {
+    th.second-col {
+      padding-left: 35vw;
       }
   }
 
-  @media screen and (max-width: 1025px) {
-    td.second-col, th.second-col {
-      padding-left: 360px;
-      padding-right: 30px;
+  /* IPAD PRO 10.5*/
+    @media screen and (max-width: 834px) {
+      th.second-col {
+        padding-left: 42vw;
+        }
+    }
+
+  /* KINDLE FIRE */
+    @media screen and (max-width: 800px) {
+      th.second-col {
+        padding-left: 47vw;
+        }
+    }
+
+/* IPAD & IPAD Mini */
+  @media screen and (max-width: 768px) {
+    th.second-col {
+      padding-left: 53vw;
+
       }
   }
 
-  @media screen and (max-width: 800px) {
-    td.second-col, th.second-col {
-      padding-left: 400px;
-      padding-right: 30px;
+/* Nexus 7 */
+  @media screen and (max-width: 600px) {
+    th.second-col {
+      padding-left: 75vw;
+
       }
   }
 
-  @media screen and (max-width: 610px) {
-    td.second-col, th.second-col {
-      padding-left: 450px;
-      padding-right: 30px;
-      }
-  }
-
+/* Iphone 6/7/8 Plus */
   @media screen and (max-width: 415px) {
-    td.second-col, th.second-col {
-      padding-left: 620px;
+    th.second-col {
+      padding-left: 150vw;
       }
   }
 
-  @media screen and (max-width: 385px) {
-    td.second-col, th.second-col {
-      padding-left: 675px;
+  /* Nexus 5X, Nexus 6P, Pixel 2, Pixel 2 XL */
+    @media screen and (max-width: 412px) {
+      th.second-col {
+        padding-left: 153vw;
+        }
+    }
+
+  /* LG Optimus L70 */
+    @media screen and (max-width: 384px) {
+      th.second-col {
+        padding-left: 170vw;
+        }
+    }
+
+/* Iphone 6/7/8 */
+  @media screen and (max-width: 375px) {
+    th.second-col {
+      padding-left: 178vw;
       }
   }
 
+/* Galaxy S5 */
+  @media screen and (max-width: 360px) {
+    th.second-col {
+      padding-left: 190vw;
+      }
+  }
+
+/* Iphone 5 */
   @media screen and (max-width: 320px) {
-    td.second-col, th.second-col {
-      padding-left: 700px;
-      }
-      th.top-left {
-        width: 104px;
+    th.second-col {
+      padding-left: 225vw;
       }
   }
+
+  /* Nokia 8110 4G Firefox*/
+    @media screen and (max-width: 240px) {
+      th.second-col {
+        padding-left: 330vw;
+        }
+    }
 
 /************************** Footer *******************************/
 
