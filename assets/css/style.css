@@ -119,10 +119,15 @@ hr {
   margin: 10px 0 10px 0;
 }
 
-.comments p {
-  padding: 20px 0;
-  margin-bottom: 0;
+.member-comment {
   font-size: 20px;
+  color: #000;
+}
+
+.comments p {
+
+  margin-bottom: 0;
+  font-size: 22px;
   color: #000;
 }
 
@@ -145,21 +150,36 @@ hr {
 /************************** About *******************************/
 .home-image-1 {
   object-fit: cover;
-  height: 50vh;
+  height: 35vh;
   width: 100%;
 }
 
 .home-image-2 {
   object-fit: cover;
-  height: 50vh;
+  height: 35vh;
   width: 100%;
 }
 
 .about p {
-  font-size: 24px;
-  font-family: Roboto, sans-serif;
+  font-size: 20px;
+  font-family: 'krona One', sans-serif;
+  font-weight: 200;
+  line-height: 35px;
+  font-style: italic;
 }
 
+@media screen and (max-width: 1024px) {
+  .home-image-1 {
+    object-fit: cover;
+    height: 310px;
+    width: 100%;
+  }
+  .home-image-2 {
+    object-fit: cover;
+    height: 310px;
+    width: 100%;
+  }
+}
 
 
 @media screen and (max-width: 800px) {
@@ -168,17 +188,6 @@ hr {
     height: 310px;
     width: 100%;
   }
-}
-
-@media screen and (max-width: 415px) {
-  .home-image-1 {
-    object-fit: cover;
-    height: 300px;
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 800px) {
   .home-image-2 {
     object-fit: cover;
     height: 310px;
@@ -191,6 +200,11 @@ hr {
 }
 
 @media screen and (max-width: 415px) {
+  .home-image-1 {
+    object-fit: cover;
+    height: 300px;
+    width: 100%;
+  }
   .home-image-2 {
     object-fit: cover;
     object-position: -160px;
@@ -198,6 +212,7 @@ hr {
     width: 100%;
   }
 }
+
 
 /************************** CARDS *******************************/
 
@@ -230,6 +245,7 @@ hr {
   font-size: 18px;
   text-align: center;
   color: #fafafa;
+  padding-top: 20px;
 }
 
 .card-body a {
