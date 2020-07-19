@@ -56,11 +56,17 @@ hr {
   transition: all 0.35s ease-in-out;
   -moz-transition: all 0.35s ease-in-out;
   -webkit-transition: all 0.35s ease-in-out;
-  -o-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out; a
 }
+
+
 
 .nav-item a:hover {
     color: #10ad25 !important;
+}
+
+.nav-item .active {
+  color: #10ad25 !important;
 }
 
 /************************** HOME *******************************/
@@ -77,20 +83,6 @@ hr {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-
-@media screen and (max-width: 800px) {
-  .hero-image {
-    background-position: -120px 80px;
-  }
-}
-
-@media screen and (max-width: 415px) {
-  .hero-image {
-  background-position: -100px 80px;
-  background-size:auto;
-  }
-}
-
 
 .hero-cta {
   position: absolute;
@@ -125,10 +117,8 @@ hr {
 }
 
 .comments p {
-
   margin-bottom: 0;
   font-size: 22px;
-  color: #000;
 }
 
 .carousel-inner .row {
@@ -148,6 +138,7 @@ hr {
 }
 
 /************************** About *******************************/
+
 .home-image-1 {
   object-fit: cover;
   height: 35vh;
@@ -164,53 +155,8 @@ hr {
   font-size: 20px;
   font-family: 'krona One', sans-serif;
   font-weight: 200;
-  line-height: 35px;
+  line-height: 40px;
   font-style: italic;
-}
-
-@media screen and (max-width: 1024px) {
-  .home-image-1 {
-    object-fit: cover;
-    height: 310px;
-    width: 100%;
-  }
-  .home-image-2 {
-    object-fit: cover;
-    height: 310px;
-    width: 100%;
-  }
-}
-
-
-@media screen and (max-width: 800px) {
-  .home-image-1 {
-    object-fit: cover;
-    height: 310px;
-    width: 100%;
-  }
-  .home-image-2 {
-    object-fit: cover;
-    height: 310px;
-    width: 100%;
-    object-position: -150px;
-  }
-  .about p {
-    font-size: 16px;
-  }
-}
-
-@media screen and (max-width: 415px) {
-  .home-image-1 {
-    object-fit: cover;
-    height: 300px;
-    width: 100%;
-  }
-  .home-image-2 {
-    object-fit: cover;
-    object-position: -160px;
-    height: 300px;
-    width: 100%;
-  }
 }
 
 
@@ -227,25 +173,18 @@ hr {
   border: 0;
 }
 
- /* .card-img-top {
-
-    height: 400;
-    object-fit: cover;
-} */
-
-
 .card-body {
   padding: 0 0 5px 0;
   margin-bottom: 20px;
   width: 100%;
 }
 
-.card h2 {
+.card h5 {
   font-family: 'krona One', sans-serif;
   font-size: 18px;
   text-align: center;
   color: #fafafa;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 .card-body a {
@@ -253,7 +192,7 @@ hr {
   text-align: center;
   color: #fafafa;
   padding: 5px;
-  border: 1pt solid #899988;
+  /* border: 1pt solid #899988; */
   letter-spacing: 1px;
   display: block;
 }
@@ -262,22 +201,47 @@ hr {
   font-family: 'Roboto', sans-serif;
 }
 
-@media screen and (max-width: 800px) {
-  .card {
-    margin: 10px 5px 5px 10px;
-  }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgb(34, 36, 34);
 }
 
-@media screen and (max-width: 415px) {
-  .card {
-    margin: 10px 0;
-  }
+.text {
+  visibility: hidden;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.card:hover .overlay {
+  opacity: 0.5;
+}
+
+.card:hover .text {
+  visibility: visible;
 }
 
 /************************** MODALS *******************************/
 
 .modal-content {
   background-color: rgba(34, 36, 34, 0.8);
+  line-height: 35px;
+  font-size: 20px;
   color: #fafafa;
 }
 
@@ -332,104 +296,6 @@ th.second-col {
   padding-right: 30px;
   }
 
-  @media screen and (max-width: 1500px) {
-    th.second-col {
-      padding-left: 110px;
-      }
-  }
-
-/* Laptop with MDPI */
-  @media screen and (max-width: 1280px) {
-    th.second-col {
-      padding-left: 15vw;
-      }
-  }
-
-/* IPAD PRO 12.5*/
-  @media screen and (max-width: 1024px) {
-    th.second-col {
-      padding-left: 35vw;
-      }
-  }
-
-  /* IPAD PRO 10.5*/
-    @media screen and (max-width: 834px) {
-      th.second-col {
-        padding-left: 42vw;
-        }
-    }
-
-  /* KINDLE FIRE */
-    @media screen and (max-width: 800px) {
-      th.second-col {
-        padding-left: 47vw;
-        }
-    }
-
-/* IPAD & IPAD Mini */
-  @media screen and (max-width: 768px) {
-    th.second-col {
-      padding-left: 53vw;
-
-      }
-  }
-
-/* Nexus 7 */
-  @media screen and (max-width: 600px) {
-    th.second-col {
-      padding-left: 75vw;
-
-      }
-  }
-
-/* Iphone 6/7/8 Plus */
-  @media screen and (max-width: 415px) {
-    th.second-col {
-      padding-left: 150vw;
-      }
-  }
-
-  /* Nexus 5X, Nexus 6P, Pixel 2, Pixel 2 XL */
-    @media screen and (max-width: 412px) {
-      th.second-col {
-        padding-left: 153vw;
-        }
-    }
-
-  /* LG Optimus L70 */
-    @media screen and (max-width: 384px) {
-      th.second-col {
-        padding-left: 170vw;
-        }
-    }
-
-/* Iphone 6/7/8 */
-  @media screen and (max-width: 375px) {
-    th.second-col {
-      padding-left: 178vw;
-      }
-  }
-
-/* Galaxy S5 */
-  @media screen and (max-width: 360px) {
-    th.second-col {
-      padding-left: 190vw;
-      }
-  }
-
-/* Iphone 5 */
-  @media screen and (max-width: 320px) {
-    th.second-col {
-      padding-left: 225vw;
-      }
-  }
-
-  /* Nokia 8110 4G Firefox*/
-    @media screen and (max-width: 240px) {
-      th.second-col {
-        padding-left: 330vw;
-        }
-    }
 
 /************************** Footer *******************************/
 
@@ -450,7 +316,6 @@ footer {
   margin: 20px 0;
   padding: 10px 0 0 10px;
 }
-
 
 .social li a i {
   width: 40px;
@@ -476,7 +341,6 @@ footer {
   color: #10ad25;
 }
 
-
 #opening-hours-table {
   margin: 20px 0;
   font-size: 15px;
@@ -486,3 +350,152 @@ footer {
   padding: 10px 15px;
   border: 1px solid #fafafa;
 }
+
+/************************** Media Queries *******************************/
+
+@media screen and (max-width: 1500px) {
+  th.second-col {
+    padding-left: 110px;
+  }
+}
+
+/* Laptop with MDPI */
+@media screen and (max-width: 1280px) {
+  th.second-col {
+    padding-left: 15vw;
+  }
+}
+
+/* IPAD PRO 12.5*/
+@media screen and (max-width: 1024px) {
+  th.second-col {
+    padding-left: 35vw;
+  }
+  .home-image-1 {
+    object-fit: cover;
+    height: 310px;
+    width: 100%;
+  }
+  .home-image-2 {
+    object-fit: cover;
+    height: 310px;
+    width: 100%;
+  }
+}
+
+/* IPAD PRO 10.5*/
+@media screen and (max-width: 834px) {
+  th.second-col {
+    padding-left: 42vw;
+  }
+}
+
+/* KINDLE FIRE */
+@media screen and (max-width: 800px) {
+  .hero-image {
+    background-position: -120px 80px;
+  }
+  th.second-col {
+    padding-left: 47vw;
+  }
+  .card {
+    margin: 10px 5px 5px 10px;
+  }
+  .home-image-1 {
+    object-fit: cover;
+    height: 310px;
+    width: 100%;
+  }
+  .home-image-2 {
+    object-fit: cover;
+    height: 310px;
+    width: 100%;
+    object-position: -150px;
+  }
+  .about p {
+    font-size: 16px;
+    line-height: 30px;
+  }
+}
+
+/* IPAD & IPAD Mini */
+@media screen and (max-width: 768px) {
+  th.second-col {
+    padding-left: 53vw;
+
+  }
+}
+
+/* Nexus 7 */
+@media screen and (max-width: 600px) {
+  th.second-col {
+    padding-left: 75vw;
+  }
+}
+
+/* Iphone 6/7/8 Plus */
+@media screen and (max-width: 415px) {
+  .hero-image {
+  background-position: -100px 80px;
+  background-size:auto;
+  }
+  th.second-col {
+    padding-left: 150vw;
+  }
+  .card {
+    margin: 10px 0;
+  }
+  .home-image-1 {
+  object-fit: cover;
+  height: 300px;
+  width: 100%;
+}
+  .home-image-2 {
+    object-fit: cover;
+    object-position: -160px;
+    height: 300px;
+    width: 100%;
+  }
+}
+
+/* Nexus 5X, Nexus 6P, Pixel 2, Pixel 2 XL */
+@media screen and (max-width: 412px) {
+  th.second-col {
+    padding-left: 153vw;
+  }
+}
+
+/* LG Optimus L70 */
+@media screen and (max-width: 384px) {
+  th.second-col {
+    padding-left: 170vw;
+  }
+}
+
+/* Iphone 6/7/8 */
+@media screen and (max-width: 375px) {
+  th.second-col {
+    padding-left: 178vw;
+  }
+}
+
+/* Galaxy S5 */
+@media screen and (max-width: 360px) {
+  th.second-col {
+    padding-left: 190vw;
+  }
+}
+
+/* Iphone 5 */
+@media screen and (max-width: 320px) {
+  th.second-col {
+    padding-left: 225vw;
+  }
+}
+
+/* Nokia 8110 4G Firefox*/
+  @media screen and (max-width: 240px) {
+    th.second-col {
+      padding-left: 330vw;
+    }
+  }

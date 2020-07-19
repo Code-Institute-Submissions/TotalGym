@@ -22,8 +22,8 @@
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">HOME</a>
+            <li class="nav-item ">
+              <a class="nav-link active" href="index.html">HOME</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="facilities.html">FACILITIES</a>
@@ -124,7 +124,7 @@
               <img src="assets/images/balanced.jpg" class="img-fluid home-image-1 rounded "  alt="Personal Trainer">
             </div>
           </div>
-          <div class="col-md-6 p-2 p-lg-4">
+          <div class="col-md-6 p-3 p-lg-4 my-auto">
             <p>At Total Gym we believe that being healthy helps you to live a more fulfilling life. And the key to achieving this, involves having a good balance of the right foods and the right exercises.</p>
           </div>
         </div>
@@ -134,7 +134,7 @@
               <img src="assets/images/strength3.jpg" class="img-fluid home-image-2 rounded "  alt="Personal Trainer">
             </div>
           </div>
-          <div class="col-md-6 p-2 p-lg-4">
+          <div class="col-md-6 p-3 p-lg-4 my-auto">
             <p>Whether you are looking for some light exercise or you want to get a bit more serious about your training, we have everything here that you could possibly need.</p>
           </div>
         </div>
@@ -210,5 +210,68 @@
         </div>
       </div>
     </footer>
+
+    <!-- Form Modals -->
+    <div class="modal fade" id="joinNow" tabindex="-1" role="dialog" aria-labelledby="joinNowTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="joinNowTitle">JOINING FORM</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="joinnow.html" method="post">
+              <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" class="form-control" id="firstName" placeholder="First Name">
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+              </div>
+              <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" required="true"  class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              </div>
+              <button type="submit" class="btn btn-success">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="tellMeMore" tabindex="-1" role="dialog" aria-labelledby="tellMeMoreTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="tellMeMoreTitle">INFORMATION REQUEST FORM</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              </div>
+              <button type="submit" class="btn btn-success">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </body>
 </html>
