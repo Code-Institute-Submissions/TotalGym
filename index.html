@@ -67,7 +67,7 @@
                   <div class="col-12 col-md-3 pr-3 pt-4 pt-md-0 my-md-auto d-flex justify-content-center ">
                     <img src="assets/images/Member1.png" width="175" height="175" class="member-picture rounded-circle"  alt="Member 1">
                   </div>
-                  <div class="col-7 member-comment my-auto pb-3">
+                  <div class="col-7 member-comment my-md-auto pb-3">
                     <q>Total Gym is truly an awesome Gym. They have helped me so much over the past 12 months to achieve my fitness goals.
                     </q>
                     <p>Jake, May 2020</p>
@@ -79,7 +79,7 @@
                   <div class="col-12 col-md-3 pr-3 pt-4 pt-md-0 my-md-auto d-flex justify-content-center">
                     <img src="assets/images/Member2.png" width="175" height="175" class="member-picture rounded-circle"  alt="Member 2">
                   </div>
-                  <div class="col-7 member-comment my-auto pb-3">
+                  <div class="col-7 member-comment my-md-auto pb-3">
                     <q>I love Total Gym, the staff are always happy to help me and the facilities are excellent. I especially enjoy spending time in the Spa after exercising.
                     </q>
                     <p>Sarah, June 2020</p>
@@ -91,8 +91,8 @@
                   <div class="col-12 col-md-3 pr-3 pt-4 pt-md-0 my-md-auto d-flex justify-content-center">
                     <img src="assets/images/Member3.png" width="175" height="175" class="member-picture rounded-circle"  alt="Member 3">
                   </div>
-                  <div class="col-7 member-comment my-auto pb-3">
-                    <q>Before Total Gym I was very unhealthy and couldn't imagine ever being able to get fit, but with all of the support from everybody at Total Gym I was able to get fit and can now say that I feel healthy as well.  Thanks Guys.
+                  <div class="col-7 member-comment my-md-auto pb-3">
+                    <q>Before Total Gym I was very unhealthy and couldn't imagine ever being able to get fit, but with all of the support from everybody at Total Gym I was able to get fit and can now say that I feel healthy as well. .
                     </q>
                     <p>Steve, April 2020</p>
                   </div>
@@ -211,43 +211,10 @@
       </div>
     </footer>
 
-    <!-- Form Modals -->
-    <div class="modal fade" id="joinNow" tabindex="-1" role="dialog" aria-labelledby="joinNowTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="joinNowTitle">JOINING FORM</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <form action="joinnow.html" method="post">
-              <div class="form-group">
-                <label for="firstName">First Name</label>
-                <input type="text" class="form-control" id="firstName" placeholder="First Name">
-              </div>
-              <div class="form-group">
-                <label for="lastName">Last Name</label>
-                <input type="text" class="form-control" id="lastName" placeholder="Last Name">
-              </div>
-              <div class="form-group">
-                <label for="email">Email address</label>
-                <input type="email" required="true"  class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-              </div>
-              <div class="form-group">
-                <label for="exampleInputPassword1">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-              </div>
-              <button type="submit" class="btn btn-success">Submit</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
+  <!-- Form Modals (This code is repeated in facilities.html, classes.html & services.html)-->
+  <!-- TELL ME MORE BUTTON -->
     <div class="modal fade" id="tellMeMore" tabindex="-1" role="dialog" aria-labelledby="tellMeMoreTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="tellMeMoreTitle">INFORMATION REQUEST FORM</h5>
@@ -256,22 +223,94 @@
             </button>
           </div>
           <div class="modal-body">
-            <form>
+            <form method="post">
+              <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" required>
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" required>
+              </div>
+              <div class="form-group">
+                <label for="contactNumber">Contact Number</label>
+                <input type="tel" class="form-control" id="contactNumber" name="contactNumber" required>
+              </div>
               <div class="form-group">
                 <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter email" required>
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+              <div class="message">
+                <label for="message">Please enter query below.</label>
+                <textarea name="message" id="message" rows="4" required></textarea>
+              </div>
+              <button type="submit"  class="btn btn-success">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /TELL ME MORE BUTTON -->
+
+    <!-- JOIN NOW BUTTON -->
+    <div class="modal fade" id="joinNow" tabindex="-1" role="dialog" aria-labelledby="joinNowTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="joinNowTitle">JOINING FORM</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form method="post">
+              <div class="form-group">
+                <label for="firstName2">First Name</label>
+                <input type="text" class="form-control" id="firstName2" name="firstName" placeholder="First Name" required>
+              </div>
+              <div class="form-group">
+                <label for="lastName2">Last Name</label>
+                <input type="text" class="form-control" id="lastName2" name="lastName" placeholder="Last Name" required>
+              </div>
+              <div class="form-group">
+                <label for="dateOfBirth">Date of Birth</label>
+                <input type="date" class="form-control" id="dateOfBirth" name="dateOfBirth" required>
+              </div>
+              <p>Gender</p>
+              <div class="form-group gender">
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label><br>
+              </div>
+              <div class="form-group">
+                <label for="contactNumber">Contact Number</label>
+                <input type="tel" class="form-control" id="contactNumber" required>
+              </div>
+              <div class="form-group">
+                <label for="email2">Email address</label>
+                <input type="email" required="true"  class="form-control" id="email2" name="email" aria-describedby="emailHelp" placeholder="Enter email" required>
                 <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
               </div>
               <div class="form-group">
-                <label for="exampleInputPassword1">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                <label for="password1">Password</label>
+                <input type="password" class="form-control" id="password1" name="password" placeholder="Password" required>
+              </div>
+              <div class="form-group">
+                <label for="password2">Repeat Password</label>
+                <input type="password" class="form-control" id="password2" name="password" placeholder="Repeat Password" required>
               </div>
               <button type="submit" class="btn btn-success">Submit</button>
             </form>
           </div>
         </div>
       </div>
+      <!-- /JOIN NOW BUTTON -->
     </div>
+    <!-- /Form Modals -->
 
   </body>
 </html>

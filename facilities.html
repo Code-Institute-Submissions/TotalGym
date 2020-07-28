@@ -84,13 +84,15 @@
               </div>
             </div>
           </div>
+
+          <!-- FREE WEIGHTS -->
           <div class="col-12 col-md-6 col-lg-4">
             <div class="card">
               <img src="assets/images/free weights.jpg" class="card-img-top" alt="Free Weights">
               <div class="card-body align-self-center text-light">
                 <!-- Button trigger modal -->
                 <a data-toggle="modal" data-target="#freeWeights">
-                  <h5>Free Weights</h5>
+                  <h5>FREE WEIGHTS</h5>
                   <div class="overlay"></div>
                   <div class="text">Click for details</div>
                 </a>
@@ -283,6 +285,12 @@
       </div>
     </section>   <!-- facilites -->
 
+    <!-- CTA Buttons -->
+    <div class="justify-content-center d-flex cta">
+      <a data-toggle="modal" data-target="#tellMeMore" class="btn btn-success mr-2 mt-5">TELL ME MORE</a>
+      <a data-toggle="modal" data-target="#joinNow" class="btn btn-success mr-2 mt-5">JOIN NOW</a>
+    </div>
+
     <footer>
       <div class="container-fluid no-gutter py-4">
         <div class="row">
@@ -351,5 +359,107 @@
         </div>
       </div>
     </footer>
+
+    <!-- Form Modals (This code is repeated in index.html, classes.html & services.html)-->
+    <!-- TELL ME MORE BUTTON -->
+      <div class="modal fade" id="tellMeMore" tabindex="-1" role="dialog" aria-labelledby="tellMeMoreTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="tellMeMoreTitle">INFORMATION REQUEST FORM</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form method="post">
+                <div class="form-group">
+                  <label for="firstName">First Name</label>
+                  <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" required>
+                </div>
+                <div class="form-group">
+                  <label for="lastName">Last Name</label>
+                  <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" required>
+                </div>
+                <div class="form-group">
+                  <label for="contactNumber">Contact Number</label>
+                  <input type="tel" class="form-control" id="contactNumber" name="contactNumber" required>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter email" required>
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="message">
+                  <label for="message">Please enter query below.</label>
+                  <textarea name="message" id="message" rows="4" required></textarea>
+                </div>
+                <button type="submit"  class="btn btn-success">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /TELL ME MORE BUTTON -->
+
+      <!-- JOIN NOW BUTTON -->
+      <div class="modal fade" id="joinNow" tabindex="-1" role="dialog" aria-labelledby="joinNowTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="joinNowTitle">JOINING FORM</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form method="post">
+                <div class="form-group">
+                  <label for="firstName2">First Name</label>
+                  <input type="text" class="form-control" id="firstName2" name="firstName" placeholder="First Name" required>
+                </div>
+                <div class="form-group">
+                  <label for="lastName2">Last Name</label>
+                  <input type="text" class="form-control" id="lastName2" name="lastName" placeholder="Last Name" required>
+                </div>
+                <div class="form-group">
+                  <label for="dateOfBirth">Date of Birth</label>
+                  <input type="date" class="form-control" id="dateOfBirth" name="dateOfBirth" required>
+                </div>
+                <p>Gender</p>
+                <div class="form-group gender">
+                  <input type="radio" id="male" name="gender" value="male">
+                  <label for="male">Male</label>
+                  <input type="radio" id="female" name="gender" value="female">
+                  <label for="female">Female</label>
+                  <input type="radio" id="other" name="gender" value="other">
+                  <label for="other">Other</label><br>
+                </div>
+                <div class="form-group">
+                  <label for="contactNumber">Contact Number</label>
+                  <input type="tel" class="form-control" id="contactNumber" required>
+                </div>
+                <div class="form-group">
+                  <label for="email2">Email address</label>
+                  <input type="email" required="true"  class="form-control" id="email2" name="email" aria-describedby="emailHelp" placeholder="Enter email" required>
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="password1">Password</label>
+                  <input type="password" class="form-control" id="password1" name="password" placeholder="Password" required>
+                </div>
+                <div class="form-group">
+                  <label for="password2">Repeat Password</label>
+                  <input type="password" class="form-control" id="password2" name="password" placeholder="Repeat Password" required>
+                </div>
+                <button type="submit" class="btn btn-success">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- /JOIN NOW BUTTON -->
+      </div>
+      <!-- /Form Modals -->
+
   </body>
 </html>

@@ -111,15 +111,12 @@ hr {
   margin: 10px 0 10px 0;
 }
 
+
 .member-comment {
   font-size: 20px;
   color: #000;
 }
 
-.comments p {
-  margin-bottom: 0;
-  font-size: 22px;
-}
 
 .carousel-inner .row {
   margin: 0 -80px;
@@ -306,6 +303,17 @@ th.second-col {
   padding-right: 30px;
   }
 
+/************************** FORMS *******************************/
+
+.message textarea {
+  display: block;
+  width: 100%;
+}
+
+form .gender {
+  padding-left: 10px;
+}
+
 
 /************************** Footer *******************************/
 
@@ -391,6 +399,9 @@ footer {
     height: 310px;
     width: 100%;
   }
+  .carousel-inner .row {
+    height: 200px;
+  }
 }
 
 /* IPAD PRO 10.5*/
@@ -426,13 +437,18 @@ footer {
     font-size: 16px;
     line-height: 30px;
   }
+  .carousel-inner .row {
+    height: 220px;
+  }
 }
 
 /* IPAD & IPAD Mini */
 @media screen and (max-width: 768px) {
   th.second-col , td.second-col {
     padding-left: 53vw;
-
+  }
+  .carousel-inner .row {
+    height: 250px;
   }
 }
 
@@ -440,6 +456,9 @@ footer {
 @media screen and (max-width: 600px) {
   th.second-col , td.second-col {
     padding-left: 75vw;
+  }
+  .carousel-inner .row {
+    height: 450px;
   }
 }
 
@@ -465,6 +484,9 @@ footer {
     object-position: -160px;
     height: 300px;
     width: 100%;
+  }
+  .carousel-inner .row {
+    height: 510px;
   }
 }
 
