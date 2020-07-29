@@ -31,6 +31,13 @@ hr {
     text-align: center;
 }
 
+.cta2 {
+    font-family: 'krona One', sans-serif;
+    text-shadow: 2px 2px black;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
 .btn-success {
   background-color: #3aaa35;
 }
@@ -153,7 +160,6 @@ hr {
   font-family: 'krona One', sans-serif;
   font-weight: 100;
   line-height: 40px;
-  font-style: italic;
 }
 
 
@@ -256,8 +262,15 @@ hr {
 
 /************************** CLASSES TABLE *******************************/
 
+.class-timetable h2 {
+  text-align: center;
+  font-family: 'krona One', sans-serif;
+  font-size: 22px;
+  font-weight: 200;
+  padding-bottom: 10px;
+}
 
-.class-timetable {
+.timetable {
   overflow: auto;
   border: 1px solid #fff;
   white-space: nowrap;
@@ -273,13 +286,13 @@ hr {
   border: none;
 }
 
-.class-timetable .table td {
+.timetable .table td {
   border: 1px solid #fafafa;
   font-family: 'krona One', sans-serif;
   font-size: 10px;
 }
 
-.class-timetable th {
+.timetable th {
   top: 0px;
   background-color: green;
   border: 1px solid #fafafa;
@@ -291,7 +304,7 @@ hr {
   position: -webkit-sticky;
 }
 
-.class-timetable .first-col  {
+.timetable .first-col  {
   left: -10px;
   background-color: green;
   z-index: 4;
