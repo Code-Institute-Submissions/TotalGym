@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Total Gym</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+        <a class="navbar-brand ml-md-3 ml-lg-5" href="index.html">
+          <img src="assets/images/TotalGymLogo.png" alt="TotalGymLogo" width="120" height="60">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="facilities.html">FACILITIES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="classes.html">CLASSES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">SERVICES</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Class Information cards -->
+    <section class="class-info">
+      <div class="container-fluid cards">
+        <div class="row">
+
+          <!-- YOGA -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card">
+              <img src="assets/images/yogasquare.jpg" width="100" class="card-img-top" alt="Yoga">
+              <div class="card-body align-self-center text-light">
+                <!-- Button trigger modal -->
+                <a data-toggle="modal" data-target="#yoga">
+                  <h5>yoga</h5>
+                  <div class="overlay"></div>
+                  <div class="text">Click for details</div>
+                </a>
+                <!-- Modal -->
+                <div class="modal fade" id="yoga" tabindex="-1" role="dialog" aria-labelledby="yogaTitle" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="yogaTitle">Yoga</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="row">
+                          <div class="col-12 col-lg-6">
+                            <img src="assets/images/yoga.jpg" class="card-img-top" alt="Yoga">
+                          </div>
+                          <div class="col-12 col-lg-6 py-2">
+                            <p>
+                              Yoga is an ancient form of exercise that focuses on strength, flexibility and breathing to boost physical and mental wellbeing. The main components of yoga are postures (a series of movements designed to increase strength and flexibility) and breathing.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- HIIT -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card">
+              <img src="assets/images/hiitsquare.jpg" class="card-img-top" alt="HIIT">
+              <div class="card-body align-self-center text-light">
+                <!-- Button trigger modal -->
+                <a data-toggle="modal" data-target="#hiit">
+                  <h5>HIIT</h5>
+                  <div class="overlay"></div>
+                  <div class="text">Click for details</div>
+                </a>
+                <!-- Modal -->
+                <div class="modal fade" id="hiit" tabindex="-1" role="dialog" aria-labelledby="hiitTitle" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="hiitTitle">HIIT</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="row">
+                          <div class="col-12 col-lg-6">
+                            <img src="assets/images/hiit.jpg" class="card-img-top" alt="HIIT">
+                          </div>
+                          <div class="col-12 col-lg-6 py-2">
+                            <p>
+                              High-intensity interval training (HIIT), also called high-intensity intermittent exercise (HIIE) or sprint interval training (SIT), is a form of interval training, a cardiovascular exercise strategy alternating short periods of intense anaerobic exercise with less intense recovery periods, until too exhausted to continue.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- BOXERCISE -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card">
+              <img src="assets/images/boxercisesquare.jpg" class="card-img-top" alt="Boxercise">
+              <div class="card-body align-self-center text-light">
+                <!-- Button trigger modal -->
+                <a data-toggle="modal" data-target="#boxercise">
+                  <h5>boxercise</h5>
+                  <div class="overlay"></div>
+                  <div class="text">Click for details</div>
+                </a>
+                <!-- Modal -->
+                <div class="modal fade" id="boxercise" tabindex="-1" role="dialog" aria-labelledby="boxerciseTitle" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="boxerciseTitle">Boxercise</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="row">
+                          <div class="col-12 col-lg-6">
+                            <img src="assets/images/boxercise.jpg" class="card-img-top" alt="Boxercise">
+                          </div>
+                          <div class="col-12 col-lg-6 py-2">
+                            <p>
+                              Boxercise is a high intensity interval training class based on boxing training. It differs from boxing in that boxing is a competitive sport whereas Boxercise includes aspects of boxing training but not sparring or competitive bouts.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card">
+              <img src="assets/images/pilatessquare.jpg" class="card-img-top" alt="Pilates">
+              <div class="card-body align-self-center text-light">
+                <!-- Button trigger modal -->
+                <a data-toggle="modal" data-target="#pilates">
+                  <h5>PILATES</h5>
+                  <div class="overlay"></div>
+                  <div class="text">Click for details</div>
+                </a>
+                <!-- Modal -->
+                <div class="modal fade" id="pilates" tabindex="-1" role="dialog" aria-labelledby="pilatesTitle" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="pilatesTitle">Pilates</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="row">
+                          <div class="col-12 col-lg-6">
+                            <img src="assets/images/pilates.jpg" class="card-img-top" alt="Pilates">
+                          </div>
+                          <div class="col-12 col-lg-6 py-2">
+                            <p>
+                              Pilates aims to strengthen the body in an even way, with particular emphasis on core strength to improve general fitness and wellbeing.
+                            </p>
+                            <p>
+                              Pilates exercises are done on a mat or using special equipment, such as the Reformer, Cadillac and Wunda Chair. With its system of pulleys and springs, handles and straps, the apparatus can provide either resistance or support, depending on your needs.
+                          </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SPIN -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card">
+              <img src="assets/images/spinsquare.jpg" class="card-img-top" alt="Spin">
+              <div class="card-body align-self-center text-light">
+                <!-- Button trigger modal -->
+                <a data-toggle="modal" data-target="#spin">
+                  <h5>SPIN</h5>
+                  <div class="overlay"></div>
+                  <div class="text">Click for details</div>
+                </a>
+                <!-- Modal -->
+                <div class="modal fade" id="spin" tabindex="-1" role="dialog" aria-labelledby="spinTitle" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="spinTitle">Spin</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="row">
+                          <div class="col-12 col-lg-6">
+                            <img src="assets/images/spin.jpg" class="card-img-top" alt="Spin">
+                          </div>
+                          <div class="col-12 col-lg-6 py-2">
+                            <p>
+                              A spin class is a high-intensity cycling workout that generally takes place on a stationary machine with a heavy, weighted flywheel that is linked to the pedals.
+                            </p>
+                            <p>
+                              The result is a fixed gear bike (like a track bike) – your legs are constantly moving and you have to apply pressure to slow them down. You can’t simply stop pedalling and that means that every second of the available time is put to good use.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- AQUA -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card">
+              <img src="assets/images/aquasquare.jpg" class="card-img-top" alt="Aqua">
+              <div class="card-body align-self-center text-light">
+                <!-- Button trigger modal -->
+                <a data-toggle="modal" data-target="#aqua">
+                  <h5>AQUA</h5>
+                  <div class="overlay"></div>
+                  <div class="text">Click for details</div>
+                </a>
+                <!-- Modal -->
+                <div class="modal fade" id="aqua" tabindex="-1" role="dialog" aria-labelledby="aquaTitle" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="aquaTitle">Aqua</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="row">
+                          <div class="col-12 col-lg-6">
+                            <img src="assets/images/aqua.jpg" class="card-img-top" alt="Aqua">
+                          </div>
+                          <div class="col-12 col-lg-6 py-2">
+                            <p>
+                              Aqua classes are exceptionally popular, with thousands taking part every week. There are, however, some long-standing preconceptions that people associate with the classes. These can be anything from believing that it’s the easy option and only for unfit participants, all the way to considering it only suitable for older people.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> <!-- /class-info -->
+
+    <!-- Timetable -->
+    <section class="class-timetable">
+      <h2>Class Timetable</h2>
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 ">
+            <div class="timetable justify-content-center d-flex">
+              <table class="table uppercase">
+                <thead class="sticky-cell">
+                <tr>
+                  <td class="sticky-cell first-col"></td>
+                  <th class="second-col sticky-cell">Monday</th>
+                  <th class="sticky-cell">Tuesday</th>
+                  <th class="sticky-cell">Wednesday</th>
+                  <th class="sticky-cell">Thursday</th>
+                  <th class="sticky-cell">Friday</th>
+                  <th class="sticky-cell">Saturday</th>
+                  <th class="sticky-cell">Sunday</th>
+                </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="sticky-cell first-col">6am-7am</td>
+                    <td class="second-col"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td class="sticky-cell first-col">7am-8am</td>
+                    <td class="second-col">aqua / spin</td>
+                    <td>spin</td>
+                    <td>aqua</td>
+                    <td>spin</td>
+                    <td>aqua</td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td class="sticky-cell first-col">8am-9am</td>
+                    <td class="second-col">pilates</td>
+                    <td>yoga</td>
+                    <td>spin</td>
+                    <td>yoga</td>
+                    <td>HIIT</td>
+                    <td>spin</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td class="sticky-cell first-col">9am-10am</td>
+                    <td class="second-col"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>yoga</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td class="sticky-cell first-col">10am-11am</td>
+                    <td class="second-col"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>aqua / spin</td>
+                    <td>HIIT</td>
+                  </tr>
+                  <tr>
+                    <td class="sticky-cell first-col">11am-12pm</td>
+                    <td class="second-col"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>hiit</td>
+                    <td>aqua</td>
+                  </tr>
+                  <tr>
+                    <td class="sticky-cell first-col">12pm-1pm</td>
+                    <td class="second-col">HIIT</td>
+                    <td>Boxercise</td>
+                    <td>spin / aqua</td>
+                    <td>yoga</td>
+                    <td>pilates</td>
+                    <td>pilates</td>
+                    <td>boxercise</td>
+                  </tr>
+                  <tr>
+                    <td class="sticky-cell first-col">1pm-2pm</td>
+                    <td class="second-col">yoga</td>
+                    <td>spin / aqua</td>
+                    <td>pilates</td>
+                    <td>HIIT</td>
+                    <td>boxercise</td>
+                    <td>boxercise</td>
+                    <td>spin</td>
+                  </tr>
+                  <tr>
+                    <td class="sticky-cell first-col">3pm-4pm</td>
+                    <td class="second-col"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td class="sticky-cell first-col">4pm-5pm</td>
+                    <td class="second-col"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td class="sticky-cell first-col">5pm-6pm</td>
+                    <td class="second-col">pilates / Aqua</td>
+                    <td>HIIT</td>
+                    <td>spin</td>
+                    <td>HIIT</td>
+                    <td>aqua</td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td class="sticky-cell first-col">6pm-7pm</td>
+                    <td class="second-col">HIIT</td>
+                    <td>pilates</td>
+                    <td>HIIT</td>
+                    <td>pilates</td>
+                    <td>HIIT</td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td class="sticky-cell first-col">7pm-8pm</td>
+                    <td class="second-col">boxercise</td>
+                    <td>SPIN</td>
+                    <td>boxercise</td>
+                    <td>SPIN</td>
+                    <td>HIIT</td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td class="sticky-cell first-col">8pm-9pm</td>
+                    <td class="second-col">aqua</td>
+                    <td>boxercise</td>
+                    <td>aqua</td>
+                    <td>boxercise</td>
+                    <td>aqua</td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td class="sticky-cell first-col">9pm-10pm</td>
+                    <td class="second-col"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Buttons -->
+    <div class="justify-content-center d-flex cta2">
+      <a data-toggle="modal" data-target="#tellMeMore" class="btn btn-success mr-2 mt-5">TELL ME MORE</a>
+      <a data-toggle="modal" data-target="#joinNow" class="btn btn-success mr-2 mt-5">JOIN NOW</a>
+    </div>
+
+    <footer>
+      <div class="container-fluid no-gutter py-4">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="location pt-2">
+              <h4 class="uppercase center">location</h4>
+              <pre class="address">
+  Total gym
+  123 Queen Street
+  Royaltown
+  Buckinghamshire
+  HP10 1AB
+              </pre>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 order-12 order-md-12 ">
+            <div class="social mt-2 mt-sm-2 mt-md-2 mt-lg-0 pt-2 pb-lg-3">
+              <h4 class="uppercase center">social</h4>
+              <ul class="list-inline center py-3 pt-lg-5 pb-lg-5">
+                <li class="list-inline-item">
+                  <a href="https://www.facebook.com" target="_blank">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <span class="sr-only">Facebook</span>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.twitter.com" target="_blank">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <span class="sr-only">Twitter</span>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.youtube.com" target="_blank">
+                    <i class="fa fa-youtube" aria-hidden="true"></i>
+                    <span class="sr-only">YouTube</span>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.instagram.com" target="_blank">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <span class="sr-only">Instagram</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 order-lg-12">
+            <div class="opening-hours pt-2 pb-1 mt-2 mt-sm-2 mt-md-0">
+              <h4 class="uppercase center">Opening Hours</h4>
+              <table class="d-flex justify-content-center" id=opening-hours-table>
+                <tr>
+                  <td>Mon-Fri</td>
+                  <td>6am - 10pm</td>
+                </tr>
+                <tr>
+                  <td>Sat</td>
+                  <td>8am - 8pm</td>
+                </tr>
+                <tr>
+                  <td>Sun</td>
+                  <td>10am - 4pm</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Form Modals (This code is repeated in index.html, facilities.html & services.html)-->
+    <!-- TELL ME MORE BUTTON -->
+      <div class="modal fade" id="tellMeMore" tabindex="-1" role="dialog" aria-labelledby="tellMeMoreTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="tellMeMoreTitle">INFORMATION REQUEST FORM</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form method="post">
+                <div class="form-group">
+                  <label for="firstName">First Name</label>
+                  <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" required>
+                </div>
+                <div class="form-group">
+                  <label for="lastName">Last Name</label>
+                  <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" required>
+                </div>
+                <div class="form-group">
+                  <label for="contactNumber">Contact Number</label>
+                  <input type="tel" class="form-control" id="contactNumber" name="contactNumber" required>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter email" required>
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="message">
+                  <label for="message">Please enter query below.</label>
+                  <textarea name="message" id="message" rows="4" required></textarea>
+                </div>
+                <button type="submit"  class="btn btn-success">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /TELL ME MORE BUTTON -->
+
+      <!-- JOIN NOW BUTTON -->
+      <div class="modal fade" id="joinNow" tabindex="-1" role="dialog" aria-labelledby="joinNowTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="joinNowTitle">JOINING FORM</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form method="post">
+                <div class="form-group">
+                  <label for="firstName2">First Name</label>
+                  <input type="text" class="form-control" id="firstName2" name="firstName" placeholder="First Name" required>
+                </div>
+                <div class="form-group">
+                  <label for="lastName2">Last Name</label>
+                  <input type="text" class="form-control" id="lastName2" name="lastName" placeholder="Last Name" required>
+                </div>
+                <div class="form-group">
+                  <label for="dateOfBirth">Date of Birth</label>
+                  <input type="date" class="form-control" id="dateOfBirth" name="dateOfBirth" required>
+                </div>
+                <p>Gender</p>
+                <div class="form-group gender">
+                  <input type="radio" id="male" name="gender" value="male">
+                  <label for="male">Male</label>
+                  <input type="radio" id="female" name="gender" value="female">
+                  <label for="female">Female</label>
+                  <input type="radio" id="other" name="gender" value="other">
+                  <label for="other">Other</label><br>
+                </div>
+                <div class="form-group">
+                  <label for="contactNumber">Contact Number</label>
+                  <input type="tel" class="form-control" id="contactNumber" required>
+                </div>
+                <div class="form-group">
+                  <label for="email2">Email address</label>
+                  <input type="email" required="true"  class="form-control" id="email2" name="email" aria-describedby="emailHelp" placeholder="Enter email" required>
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="password1">Password</label>
+                  <input type="password" class="form-control" id="password1" name="password" placeholder="Password" required>
+                </div>
+                <div class="form-group">
+                  <label for="password2">Repeat Password</label>
+                  <input type="password" class="form-control" id="password2" name="password" placeholder="Repeat Password" required>
+                </div>
+                <button type="submit" class="btn btn-success">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- /JOIN NOW BUTTON -->
+      </div>
+      <!-- /Form Modals -->
+
+  </body>
+</html>
