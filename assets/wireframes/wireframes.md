@@ -15,7 +15,7 @@
 ### Tell Me More Form
 ![Tell Me More Form](/assets/wireframes/tell_me_more.png)
 ### Join Now Form
-![Join Now Form](assets/wireframes/join_now.png)
+![Join Now Form](/assets/wireframes/join_now.png)
 &nbsp;
 ---
 
