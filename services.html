@@ -39,6 +39,8 @@
       </nav>
     </header>
 
+    <!-- SERVICES SECTION -->
+    <!-- Card code taken from Bootstrap documetation - https://getbootstrap.com/docs/4.5/components/card/ & modified -->
     <section class="services">
       <div class="container-fluid cards">
         <div class="row">
@@ -72,13 +74,15 @@
           </div>
         </div>
       </div>
-    </section> <!-- services -->
+    </section>
+    <!-- /SERVICES SECTION -->
 
     <!-- CTA Buttons -->
     <div class="justify-content-center d-flex cta2">
       <a data-toggle="modal" data-target="#tellMeMore" class="btn btn-success mr-2 mt-5">TELL ME MORE</a>
       <a data-toggle="modal" data-target="#joinNow" class="btn btn-success mr-2 mt-5">JOIN NOW</a>
     </div>
+    <!-- /CTA Buttons -->
 
     <footer>
       <div class="container-fluid no-gutter py-4">
@@ -150,6 +154,7 @@
     </footer>
 
     <!-- Form Modals (This code is repeated in index.html, facilities.html & classes.html)-->
+    <!-- Modal code taken from Bootstrap documentation - https://getbootstrap.com/docs/4.5/components/modal/ & modified -->
     <!-- TELL ME MORE BUTTON -->
       <div class="modal fade" id="tellMeMore" tabindex="-1" role="dialog" aria-labelledby="tellMeMoreTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
@@ -175,9 +180,9 @@
                   <input type="tel" class="form-control" id="contactNumber" name="contactNumber" required>
                 </div>
                 <div class="form-group">
-                  <label for="exampleInputEmail1">Email address</label>
-                  <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter email" required>
-                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                  <label for="email">Email address</label>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="Enter email" required>
+                  <small class="form-text text-muted">We'll never share your email with anyone else.</small>
                 </div>
                 <div class="message">
                   <label for="message">Please enter query below.</label>
@@ -225,13 +230,13 @@
                   <label for="other">Other</label><br>
                 </div>
                 <div class="form-group">
-                  <label for="contactNumber">Contact Number</label>
-                  <input type="tel" class="form-control" id="contactNumber" required>
+                  <label for="contactNumber2">Contact Number</label>
+                  <input type="tel" class="form-control" id="contactNumber2" name="contactNumber" required>
                 </div>
                 <div class="form-group">
                   <label for="email2">Email address</label>
-                  <input type="email" required="true"  class="form-control" id="email2" name="email" aria-describedby="emailHelp" placeholder="Enter email" required>
-                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                  <input type="email" required  class="form-control" id="email2" name="email" placeholder="Enter email">
+                  <small class="form-text text-muted">We'll never share your email with anyone else.</small>
                 </div>
                 <div class="form-group">
                   <label for="password1">Password</label>
@@ -246,8 +251,8 @@
             </div>
           </div>
         </div>
-        <!-- /JOIN NOW BUTTON -->
       </div>
+      <!-- /JOIN NOW BUTTON -->
       <!-- /Form Modals -->
 
   </body>

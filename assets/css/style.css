@@ -9,7 +9,7 @@ body {
   color: #fafafa;
 }
 
-/************************** General *******************************/
+/************************** GENERAL *******************************/
 
 .uppercase {
   text-transform: uppercase;
@@ -42,13 +42,12 @@ hr {
   background-color: #3aaa35;
 }
 
-/************************** Header / Navigation *******************************/
+/************************** HEADER / NAVIGATION *******************************/
 
 .navbar {
   padding: 5px;
   background-color:  rgba(34, 36, 34,0.8);
 }
-
 
 .navbar-nav li {
   padding-right: 45px;
@@ -63,10 +62,8 @@ hr {
   transition: all 0.35s ease-in-out;
   -moz-transition: all 0.35s ease-in-out;
   -webkit-transition: all 0.35s ease-in-out;
-  -o-transition: all 0.35s ease-in-out; a
+  -o-transition: all 0.35s ease-in-out;
 }
-
-
 
 .nav-item a:hover {
     color: #10ad25 !important;
@@ -76,9 +73,7 @@ hr {
   color: #10ad25 !important;
 }
 
-/************************** HOME *******************************/
-
-/************************** Hero Image *******************************/
+/************************** HERO IMAGE *******************************/
 .hero-image {
   background-image: url(../images/hero.jpg);
   height: 80vh;
@@ -112,18 +107,16 @@ hr {
   }
 }
 
-/************************** Member Comments *******************************/
+/************************** MEMBER COMMENTS *******************************/
 
 .comments {
   margin: 10px 0 10px 0;
 }
 
-
 .member-comment {
   font-size: 20px;
   color: #000;
 }
-
 
 .carousel-inner .row {
   margin: 0 -80px;
@@ -133,6 +126,7 @@ hr {
   width: 5%;
 }
 
+/* Icon colour change code taken from Stackoverflow - https://stackoverflow.com/questions/46249541/change-arrow-colors-in-bootstraps-carousel */
 .carousel-control-next-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
 }
@@ -141,7 +135,7 @@ hr {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
 }
 
-/************************** About *******************************/
+/************************** ABOUT *******************************/
 
 .home-image-1 {
   object-fit: cover;
@@ -161,7 +155,6 @@ hr {
   font-weight: 100;
   line-height: 40px;
 }
-
 
 /************************** CARDS *******************************/
 
@@ -208,7 +201,7 @@ hr {
   text-align: center;
 }
 
-
+/* Code taken from w3schools - https://www.w3schools.com/howto/howto_css_image_overlay.asp*/
 .overlay {
   position: absolute;
   top: 0;
@@ -327,8 +320,7 @@ form .gender {
   padding-left: 10px;
 }
 
-
-/************************** Footer *******************************/
+/************************** FOOTER *******************************/
 
 footer {
   background-color:  rgb(34, 36, 34);
@@ -382,7 +374,7 @@ footer {
   border: 1px solid #fafafa;
 }
 
-/************************** Media Queries *******************************/
+/************************** MEDIA QUERIES *******************************/
 
 @media screen and (max-width: 1500px) {
   th.second-col , td.second-col {
@@ -394,6 +386,13 @@ footer {
 @media screen and (max-width: 1280px) {
   th.second-col , td.second-col {
     padding-left: 15vw;
+  }
+  .card:hover .overlay {
+    opacity: 0;
+  }
+
+  .card:hover .text {
+    visibility: hidden;
   }
 }
 
@@ -539,8 +538,8 @@ footer {
 }
 
 /* Nokia 8110 4G Firefox*/
-  @media screen and (max-width: 240px) {
-    th.second-col , td.second-col {
-      padding-left: 330vw;
-    }
+@media screen and (max-width: 240px) {
+  th.second-col , td.second-col {
+    padding-left: 330vw;
   }
+}
