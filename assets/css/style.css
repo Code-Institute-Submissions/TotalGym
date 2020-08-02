@@ -508,6 +508,26 @@ footer {
   .carousel-inner .row {
     height: 250px;
   }
+
+/* Mobile Landscape  */
+@media screen and (max-width: 740px) {
+  .hero-image {
+    background-position: 0 80px;
+  }
+  .home-image-1 {
+   -o-object-fit: cover;
+      object-fit: cover;
+   height: 350px;
+   width: 100%;
+ }
+  .home-image-2 {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 100%;
+    width: 100%;
+    -o-object-position: 0;
+       object-position: 0;
+  }
 }
 
 /* Nexus 7 */
@@ -523,14 +543,6 @@ footer {
       object-fit: cover;
    height: 310px;
    width: 100%;
- }
- .home-image-2 {
-   -o-object-fit: cover;
-      object-fit: cover;
-   height: 100%;
-   width: 100%;
-   -o-object-position: 0;
-      object-position: 0;
  }
 }
 
