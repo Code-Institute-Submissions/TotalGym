@@ -1,7 +1,7 @@
 
 ![alt text](/assets/images/TotalGymLogo_small.png "Total Gym logo")
 
-![alt text](/assets/images/reponsive.jpg "Total Gym logo")
+![alt text](/assets/images/reponsive.jpg "Responsive demo")
 
 This website has been created for a fictional Gym based in Buckinghamshire called Total Gym. The core ethos of Total Gym is to be more than just a place to exercise, it aims to provide a total health and fitness solution by providing services that cater for all areas of health and fitness. The Gym is currently independent but the owners are intending to franchise in the future if Total Gym is a success.
 ___
