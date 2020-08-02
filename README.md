@@ -1,5 +1,5 @@
 
-![alt text](/assets/images/TotalGymLogo_small.png "Total Gym logo")
+[![alt text](/assets/images/TotalGymLogo_small.png "Click to open site")](https://phil-griffith.github.io/TotalGym/)
 
 ![alt text](/assets/images/responsive.jpg "Responsive demo")
 
