@@ -142,6 +142,10 @@ hr {
 
 /************************** ABOUT *******************************/
 
+.about {
+  padding: 30px 0;
+}
+
 .home-image-1 {
   object-fit: cover;
   height: 35vh;
@@ -247,6 +251,10 @@ hr {
   visibility: visible;
 }
 
+.class-info .card:hover, .facilities .card:hover {
+  cursor: pointer;
+}
+
 /************************** MODALS *******************************/
 
 .modal-content {
@@ -315,6 +323,12 @@ th.second-col {
   padding-left: 30px;
   padding-right: 30px;
   }
+
+/************************** SERVICES PAGE *******************************/
+
+.services h2 {
+  padding: 10px;
+}
 
 /************************** FORMS *******************************/
 
@@ -436,6 +450,20 @@ footer {
   th.second-col , td.second-col {
     padding-left: 42vw;
   }
+  .home-image-1 {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 340px;
+    width: 100%;
+  }
+    .home-image-2 {
+      -o-object-fit: cover;
+         object-fit: cover;
+      -o-object-position: -160px;
+         object-position: -160px;
+      height: 340px;
+      width: 100%;
+    }
 }
 
 /* KINDLE FIRE */
@@ -465,7 +493,7 @@ footer {
  }
   .about p {
     font-size: 16px;
-    line-height: 30px;
+    line-height: 35px;
   }
   .carousel-inner .row {
     height: 220px;
@@ -490,6 +518,20 @@ footer {
   .carousel-inner .row {
     height: 450px;
   }
+  .home-image-1 {
+   -o-object-fit: cover;
+      object-fit: cover;
+   height: 310px;
+   width: 100%;
+ }
+ .home-image-2 {
+   -o-object-fit: cover;
+      object-fit: cover;
+   height: 100%;
+   width: 100%;
+   -o-object-position: 0;
+      object-position: 0;
+ }
 }
 
 /* Iphone 6/7/8 Plus */
