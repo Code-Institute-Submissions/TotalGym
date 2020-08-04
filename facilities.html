@@ -1,498 +1,485 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Total Gym</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-  </head>
-  <body>
-    <header>
-      <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
-        <a class="navbar-brand ml-md-3 ml-lg-5" href="index.html">
-          <img src="assets/images/TotalGymLogo.png" alt="TotalGymLogo" width="120" height="60">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">HOME</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="facilities.html">FACILITIES</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="classes.html">CLASSES</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="services.html">SERVICES</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-
-    <!-- Facilities section  -->
-    <section class=facilities>
-      <div class="container-fluid cards">
-        <div class="row ">
-
-          <!-- Modal code taken from Bootstrap documentation - https://getbootstrap.com/docs/4.5/components/modal/ & modified -->
-          <!-- Card code taken from Bootstrap documetation - https://getbootstrap.com/docs/4.5/components/card/ & modified -->
-          <!-- CARDIO -->
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="card">
-              <img src="assets/images/cardio-equipment.jpg" class="card-img-top" alt="Cardio Equipment">
-              <div class="card-body align-self-center text-light">
-                <!-- Button trigger modal -->
-                <a data-toggle="modal" data-target="#cardio">
-                  <h5>CARDIO</h5>
-                  <div class="overlay"></div>
-                  <div class="text">Click for details</div>
-                </a>
-              <!-- Modal -->
-                <div class="modal fade" id="cardio" tabindex="-1" role="dialog" aria-labelledby="cardioTitle" aria-hidden="true">
-                  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="cardioTitle">Cardio</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
-                      <div class="modal-body">
-                        <div class="row">
-                          <div class="col-12 col-lg-6">
-                            <img src="assets/images/cardio-equipment.jpg" class="card-img-top" alt="Cardio Equipment">
-                          </div>
-                          <div class="col-12 col-lg-6 py-2">
-                            <p>Our cardio area includes many types of cardiovascular training-related equipment such as rowing machines, stationary exercise bikes, elliptical trainers and treadmills.</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+   <head>
+      <title>Total Gym</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="assets/css/style.css">
+      <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+      <link rel="manifest" href="assets/favicon/site.webmanifest">
+      <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+      <meta name="msapplication-TileColor" content="#da532c">
+      <meta name="theme-color" content="#ffffff">
+   </head>
+   <body>
+      <header>
+         <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+            <a class="navbar-brand ml-md-3 ml-lg-5" href="index.html">
+            <img src="assets/images/TotalGymLogo.png" alt="TotalGymLogo" width="120" height="60">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+               <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                     <a class="nav-link" href="index.html">HOME</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link active" href="facilities.html">FACILITIES</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="classes.html">CLASSES</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="services.html">SERVICES</a>
+                  </li>
+               </ul>
             </div>
-          </div>
-          <!-- /CARDIO -->
-
-          <!-- FREE WEIGHTS -->
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="card">
-              <img src="assets/images/free-weights.jpg" class="card-img-top" alt="Free Weights">
-              <div class="card-body align-self-center text-light">
-                <!-- Button trigger modal -->
-                <a data-toggle="modal" data-target="#freeWeights">
-                  <h5>FREE WEIGHTS</h5>
-                  <div class="overlay"></div>
-                  <div class="text">Click for details</div>
-                </a>
-                <!-- Modal -->
-                <div class="modal fade" id="freeWeights" tabindex="-1" role="dialog" aria-labelledby="freeWeightsTitle" aria-hidden="true">
-                  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="freeWeightsTitle">Free Weights</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
-                      <div class="modal-body">
-                        <div class="row">
-                          <div class="col-12 col-lg-6">
-                            <img src="assets/images/free-weights.jpg" class="card-img-top" alt="Free Weights">
-                          </div>
-                          <div class="col-12 col-lg-6 py-2">
-                            <p>We have a large free weights area for anyone from intermediate trainers upwards. With our expert instructors on hand to guide you, free weights can change your body shape for the better, faster. When used with a good CV programme, they can help you gain all round fitness and the physique you’re focusing on.</p>
-                          </div>
+         </nav>
+      </header>
+      <!-- Facilities section  -->
+      <section class=facilities>
+         <div class="container-fluid cards">
+            <div class="row ">
+               <!-- Modal code taken from Bootstrap documentation - https://getbootstrap.com/docs/4.5/components/modal/ & modified -->
+               <!-- Card code taken from Bootstrap documetation - https://getbootstrap.com/docs/4.5/components/card/ & modified -->
+               <!-- CARDIO -->
+               <div class="col-12 col-md-6 col-lg-4">
+                  <div class="card">
+                     <img src="assets/images/cardio-equipment.jpg" class="card-img-top" alt="Cardio Equipment">
+                     <div class="card-body align-self-center text-light">
+                        <!-- Button trigger modal -->
+                        <a data-toggle="modal" data-target="#cardio">
+                           <h5>CARDIO</h5>
+                           <div class="overlay"></div>
+                           <div class="text">Click for details</div>
+                        </a>
+                        <!-- Modal -->
+                        <div class="modal fade" id="cardio" tabindex="-1" role="dialog" aria-labelledby="cardioTitle" aria-hidden="true">
+                           <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                              <div class="modal-content">
+                                 <div class="modal-header">
+                                    <h5 class="modal-title" id="cardioTitle">Cardio</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                 </div>
+                                 <div class="modal-body">
+                                    <div class="row">
+                                       <div class="col-12 col-lg-6">
+                                          <img src="assets/images/cardio-equipment.jpg" class="card-img-top" alt="Cardio Equipment">
+                                       </div>
+                                       <div class="col-12 col-lg-6 py-2">
+                                          <p>Our cardio area includes many types of cardiovascular training-related equipment such as rowing machines, stationary exercise bikes, elliptical trainers and treadmills.</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                 </div>
+                              </div>
+                           </div>
                         </div>
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                      </div>
-                    </div>
+                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- /FREE WEIGHTS -->
-
-          <!-- WEIGHT MACHINES -->
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="card">
-              <img src="assets/images/weight-machines.jpg" class="card-img-top" alt="Weight Machines">
-              <div class="card-body align-self-center text-light">
-                <!-- Button trigger modal -->
-                <a data-toggle="modal" data-target="#weightMachines">
-                  <h5>Weight Machines</h5>
-                  <div class="overlay"></div>
-                  <div class="text">Click for details</div>
-                </a>
-                <!-- Modal -->
-                <div class="modal fade" id="weightMachines" tabindex="-1" role="dialog" aria-labelledby="weightMachinesTitle" aria-hidden="true">
-                  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="weightMachinesTitle">Weight Machines</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
-                      <div class="modal-body">
-                        <div class="row">
-                          <div class="col-12 col-lg-6">
-                            <img src="assets/images/weight-machines.jpg" width="200" class="card-img-top" alt="Weight Machines">
-                          </div>
-                          <div class="col-12 col-lg-6 py-2">
-                            <p>We have a large selection of weight machines to target all areas of the body individually, some of which include, Lat pulldown, Cable row, Cable press, pull up bar, triceps cable extension, leg press, shoulder press and shoulder press.</p>
-                          </div>
+               </div>
+               <!-- /CARDIO -->
+               <!-- FREE WEIGHTS -->
+               <div class="col-12 col-md-6 col-lg-4">
+                  <div class="card">
+                     <img src="assets/images/free-weights.jpg" class="card-img-top" alt="Free Weights">
+                     <div class="card-body align-self-center text-light">
+                        <!-- Button trigger modal -->
+                        <a data-toggle="modal" data-target="#freeWeights">
+                           <h5>FREE WEIGHTS</h5>
+                           <div class="overlay"></div>
+                           <div class="text">Click for details</div>
+                        </a>
+                        <!-- Modal -->
+                        <div class="modal fade" id="freeWeights" tabindex="-1" role="dialog" aria-labelledby="freeWeightsTitle" aria-hidden="true">
+                           <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                              <div class="modal-content">
+                                 <div class="modal-header">
+                                    <h5 class="modal-title" id="freeWeightsTitle">Free Weights</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                 </div>
+                                 <div class="modal-body">
+                                    <div class="row">
+                                       <div class="col-12 col-lg-6">
+                                          <img src="assets/images/free-weights.jpg" class="card-img-top" alt="Free Weights">
+                                       </div>
+                                       <div class="col-12 col-lg-6 py-2">
+                                          <p>We have a large free weights area for anyone from intermediate trainers upwards. With our expert instructors on hand to guide you, free weights can change your body shape for the better, faster. When used with a good CV programme, they can help you gain all round fitness and the physique you’re focusing on.</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                 </div>
+                              </div>
+                           </div>
                         </div>
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                      </div>
-                    </div>
+                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- /WEIGHT MACHINES -->
-
-          <!-- STUDIO -->
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="card">
-              <img src="assets/images/gymstudio.jpg" class="card-img-top" alt="Gym Studio">
-              <div class="card-body align-self-center text-light">
-                <!-- Button trigger modal -->
-                <a data-toggle="modal" data-target="#studio">
-                  <h5>Studio</h5>
-                  <div class="overlay"></div>
-                  <div class="text">Click for details</div>
-                </a>
-                <!-- Modal -->
-                <div class="modal fade" id="studio" tabindex="-1" role="dialog" aria-labelledby="studioTitle" aria-hidden="true">
-                  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="studioTitle">Studio</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
-                      <div class="modal-body">
-                        <div class="row">
-                          <div class="col-12 col-lg-6">
-                            <img src="assets/images/gymstudio.jpg" class="card-img-top" alt="Gym Studio">
-                          </div>
-                          <div class="col-12 col-lg-6 py-2">
-                            <p>Our studio has more than enough space to accommodate large classes and contains everything you will need for the classes, including floor mats, free weights and step blocks.</p>
-                          </div>
+               </div>
+               <!-- /FREE WEIGHTS -->
+               <!-- WEIGHT MACHINES -->
+               <div class="col-12 col-md-6 col-lg-4">
+                  <div class="card">
+                     <img src="assets/images/weight-machines.jpg" class="card-img-top" alt="Weight Machines">
+                     <div class="card-body align-self-center text-light">
+                        <!-- Button trigger modal -->
+                        <a data-toggle="modal" data-target="#weightMachines">
+                           <h5>Weight Machines</h5>
+                           <div class="overlay"></div>
+                           <div class="text">Click for details</div>
+                        </a>
+                        <!-- Modal -->
+                        <div class="modal fade" id="weightMachines" tabindex="-1" role="dialog" aria-labelledby="weightMachinesTitle" aria-hidden="true">
+                           <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                              <div class="modal-content">
+                                 <div class="modal-header">
+                                    <h5 class="modal-title" id="weightMachinesTitle">Weight Machines</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                 </div>
+                                 <div class="modal-body">
+                                    <div class="row">
+                                       <div class="col-12 col-lg-6">
+                                          <img src="assets/images/weight-machines.jpg" width="200" class="card-img-top" alt="Weight Machines">
+                                       </div>
+                                       <div class="col-12 col-lg-6 py-2">
+                                          <p>We have a large selection of weight machines to target all areas of the body individually, some of which include, Lat pulldown, Cable row, Cable press, pull up bar, triceps cable extension, leg press, shoulder press and shoulder press.</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                 </div>
+                              </div>
+                           </div>
                         </div>
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                      </div>
-                    </div>
+                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- /STUDIO -->
-
-          <!-- REFRESHMENTS -->
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="card">
-              <img src="assets/images/refreshments.jpg" class="card-img-top" alt="Refreshments">
-              <div class="card-body align-self-center text-light">
-                <!-- Button trigger modal -->
-                <a data-toggle="modal" data-target="#refreshments">
-                  <h5>Refreshments</h5>
-                  <div class="overlay"></div>
-                  <div class="text">Click for details</div>
-                </a>
-                <!-- Modal -->
-                <div class="modal fade" id="refreshments" tabindex="-1" role="dialog" aria-labelledby="refreshmentsTitle" aria-hidden="true">
-                  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="refreshmentsTitle">Refreshments</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
-                      <div class="modal-body">
-                        <div class="row">
-                          <div class="col-12 col-lg-6">
-                            <img src="assets/images/refreshments.jpg" class="card-img-top" alt="Refreshments">
-                          </div>
-                          <div class="col-12 col-lg-6 py-2">
-                            <p>We know how important it is to refuel after a good workout, which is why our refreshments area has been stocked with a wide selection of healthy snacks and nutritious meals for you to choose from.</p>
-                          </div>
+               </div>
+               <!-- /WEIGHT MACHINES -->
+               <!-- STUDIO -->
+               <div class="col-12 col-md-6 col-lg-4">
+                  <div class="card">
+                     <img src="assets/images/gymstudio.jpg" class="card-img-top" alt="Gym Studio">
+                     <div class="card-body align-self-center text-light">
+                        <!-- Button trigger modal -->
+                        <a data-toggle="modal" data-target="#studio">
+                           <h5>Studio</h5>
+                           <div class="overlay"></div>
+                           <div class="text">Click for details</div>
+                        </a>
+                        <!-- Modal -->
+                        <div class="modal fade" id="studio" tabindex="-1" role="dialog" aria-labelledby="studioTitle" aria-hidden="true">
+                           <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                              <div class="modal-content">
+                                 <div class="modal-header">
+                                    <h5 class="modal-title" id="studioTitle">Studio</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                 </div>
+                                 <div class="modal-body">
+                                    <div class="row">
+                                       <div class="col-12 col-lg-6">
+                                          <img src="assets/images/gymstudio.jpg" class="card-img-top" alt="Gym Studio">
+                                       </div>
+                                       <div class="col-12 col-lg-6 py-2">
+                                          <p>Our studio has more than enough space to accommodate large classes and contains everything you will need for the classes, including floor mats, free weights and step blocks.</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                 </div>
+                              </div>
+                           </div>
                         </div>
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                      </div>
-                    </div>
+                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- /REFRESHMENTS -->
-
-          <!-- POOL & SPA -->
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="card">
-              <img src="assets/images/poolandspasquare.jpg" class="card-img-top" alt="Pool & Spa">
-              <div class="card-body align-self-center text-light d-block">
-                <!-- Button trigger modal -->
-                <a data-toggle="modal" data-target="#poolAndSpa" >
-                  <h5>Pool & Spa</h5>
-                  <div class="overlay"></div>
-                  <div class="text">Click for details</div>
-                </a>
-                <!-- Modal -->
-                <div class="modal fade" id="poolAndSpa" tabindex="-1" role="dialog" aria-labelledby="poolAndSpaTitle" aria-hidden="true">
-                  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="poolAndSpaTitle">Pool & Spa</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
-                      <div class="modal-body">
-                        <div class="row">
-                          <div class="col-12 col-lg-6">
-                            <img src="assets/images/poolandspa.jpg" class="card-img-top" alt="Pool & Spa">
-                          </div>
-                          <div class="col-12 col-lg-6 py-2">
-                            <p>For a post workout treat or if you just want to relax after a hard day at work, our Pool and Spa is just what you need. We have large swimming pool, Jacuzzi, steam room, sauna and sun loungers to relax by the pool.</p>
-                          </div>
+               </div>
+               <!-- /STUDIO -->
+               <!-- REFRESHMENTS -->
+               <div class="col-12 col-md-6 col-lg-4">
+                  <div class="card">
+                     <img src="assets/images/refreshments.jpg" class="card-img-top" alt="Refreshments">
+                     <div class="card-body align-self-center text-light">
+                        <!-- Button trigger modal -->
+                        <a data-toggle="modal" data-target="#refreshments">
+                           <h5>Refreshments</h5>
+                           <div class="overlay"></div>
+                           <div class="text">Click for details</div>
+                        </a>
+                        <!-- Modal -->
+                        <div class="modal fade" id="refreshments" tabindex="-1" role="dialog" aria-labelledby="refreshmentsTitle" aria-hidden="true">
+                           <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                              <div class="modal-content">
+                                 <div class="modal-header">
+                                    <h5 class="modal-title" id="refreshmentsTitle">Refreshments</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                 </div>
+                                 <div class="modal-body">
+                                    <div class="row">
+                                       <div class="col-12 col-lg-6">
+                                          <img src="assets/images/refreshments.jpg" class="card-img-top" alt="Refreshments">
+                                       </div>
+                                       <div class="col-12 col-lg-6 py-2">
+                                          <p>We know how important it is to refuel after a good workout, which is why our refreshments area has been stocked with a wide selection of healthy snacks and nutritious meals for you to choose from.</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                 </div>
+                              </div>
+                           </div>
                         </div>
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                      </div>
-                    </div>
+                     </div>
                   </div>
-                </div>
-              </div>
+               </div>
+               <!-- /REFRESHMENTS -->
+               <!-- POOL & SPA -->
+               <div class="col-12 col-md-6 col-lg-4">
+                  <div class="card">
+                     <img src="assets/images/poolandspasquare.jpg" class="card-img-top" alt="Pool & Spa">
+                     <div class="card-body align-self-center text-light d-block">
+                        <!-- Button trigger modal -->
+                        <a data-toggle="modal" data-target="#poolAndSpa" >
+                           <h5>Pool & Spa</h5>
+                           <div class="overlay"></div>
+                           <div class="text">Click for details</div>
+                        </a>
+                        <!-- Modal -->
+                        <div class="modal fade" id="poolAndSpa" tabindex="-1" role="dialog" aria-labelledby="poolAndSpaTitle" aria-hidden="true">
+                           <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                              <div class="modal-content">
+                                 <div class="modal-header">
+                                    <h5 class="modal-title" id="poolAndSpaTitle">Pool & Spa</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                 </div>
+                                 <div class="modal-body">
+                                    <div class="row">
+                                       <div class="col-12 col-lg-6">
+                                          <img src="assets/images/poolandspa.jpg" class="card-img-top" alt="Pool & Spa">
+                                       </div>
+                                       <div class="col-12 col-lg-6 py-2">
+                                          <p>For a post workout treat or if you just want to relax after a hard day at work, our Pool and Spa is just what you need. We have large swimming pool, Jacuzzi, steam room, sauna and sun loungers to relax by the pool.</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- /POOL & SPA -->
             </div>
-          </div>
-          <!-- /POOL & SPA -->
-
-        </div>
+         </div>
+      </section>
+      <!-- /Facilities section-->
+      <!-- CTA Buttons -->
+      <div class="justify-content-center d-flex cta2">
+         <a data-toggle="modal" data-target="#tellMeMore" class="btn btn-success mr-2 mt-5">TELL ME MORE</a>
+         <a data-toggle="modal" data-target="#joinNow" class="btn btn-success mr-2 mt-5">JOIN NOW</a>
       </div>
-    </section>
-    <!-- /Facilites section-->
-
-    <!-- CTA Buttons -->
-    <div class="justify-content-center d-flex cta2">
-      <a data-toggle="modal" data-target="#tellMeMore" class="btn btn-success mr-2 mt-5">TELL ME MORE</a>
-      <a data-toggle="modal" data-target="#joinNow" class="btn btn-success mr-2 mt-5">JOIN NOW</a>
-    </div>
-    <!-- /CTA Buttons -->
-
-    <footer>
-      <div class="container-fluid no-gutter py-4">
-        <div class="row">
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="location pt-2">
-              <h4 class="uppercase center">location</h4>
-              <pre class="address">
+      <!-- /CTA Buttons -->
+      <footer>
+         <div class="container-fluid no-gutter py-4">
+            <div class="row">
+               <div class="col-12 col-md-6 col-lg-4">
+                  <div class="location pt-2">
+                     <h4 class="uppercase center">location</h4>
+                     <pre class="address">
   Total gym
   123 Queen Street
   Royaltown
   Buckinghamshire
   HP10 1AB
               </pre>
+                  </div>
+               </div>
+               <div class="col-12 col-lg-4 order-12 order-md-12 ">
+                  <div class="social mt-2 mt-sm-2 mt-md-2 mt-lg-0 pt-2 pb-lg-3">
+                     <h4 class="uppercase center">social</h4>
+                     <ul class="list-inline center py-3 pt-lg-5 pb-lg-5">
+                        <li class="list-inline-item">
+                           <a href="https://www.facebook.com" target="_blank">
+                           <i class="fa fa-facebook" aria-hidden="true"></i>
+                           <span class="sr-only">Facebook</span>
+                           </a>
+                        </li>
+                        <li class="list-inline-item">
+                           <a href="https://www.twitter.com" target="_blank">
+                           <i class="fa fa-twitter" aria-hidden="true"></i>
+                           <span class="sr-only">Twitter</span>
+                           </a>
+                        </li>
+                        <li class="list-inline-item">
+                           <a href="https://www.youtube.com" target="_blank">
+                           <i class="fa fa-youtube" aria-hidden="true"></i>
+                           <span class="sr-only">YouTube</span>
+                           </a>
+                        </li>
+                        <li class="list-inline-item">
+                           <a href="https://www.instagram.com" target="_blank">
+                           <i class="fa fa-instagram" aria-hidden="true"></i>
+                           <span class="sr-only">Instagram</span>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-12 col-md-6 col-lg-4 order-lg-12">
+                  <div class="opening-hours pt-2 pb-1 mt-2 mt-sm-2 mt-md-0">
+                     <h4 class="uppercase center">Opening Hours</h4>
+                     <table class="d-flex justify-content-center" id=opening-hours-table>
+                        <tr>
+                           <td>Mon-Fri</td>
+                           <td>6am - 10pm</td>
+                        </tr>
+                        <tr>
+                           <td>Sat</td>
+                           <td>8am - 8pm</td>
+                        </tr>
+                        <tr>
+                           <td>Sun</td>
+                           <td>10am - 4pm</td>
+                        </tr>
+                     </table>
+                  </div>
+               </div>
             </div>
-          </div>
-          <div class="col-12 col-lg-4 order-12 order-md-12 ">
-            <div class="social mt-2 mt-sm-2 mt-md-2 mt-lg-0 pt-2 pb-lg-3">
-              <h4 class="uppercase center">social</h4>
-              <ul class="list-inline center py-3 pt-lg-5 pb-lg-5">
-                <li class="list-inline-item">
-                  <a href="https://www.facebook.com" target="_blank">
-                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                    <span class="sr-only">Facebook</span>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="https://www.twitter.com" target="_blank">
-                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                    <span class="sr-only">Twitter</span>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="https://www.youtube.com" target="_blank">
-                    <i class="fa fa-youtube" aria-hidden="true"></i>
-                    <span class="sr-only">YouTube</span>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="https://www.instagram.com" target="_blank">
-                    <i class="fa fa-instagram" aria-hidden="true"></i>
-                    <span class="sr-only">Instagram</span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4 order-lg-12">
-            <div class="opening-hours pt-2 pb-1 mt-2 mt-sm-2 mt-md-0">
-              <h4 class="uppercase center">Opening Hours</h4>
-              <table class="d-flex justify-content-center" id=opening-hours-table>
-                <tr>
-                  <td>Mon-Fri</td>
-                  <td>6am - 10pm</td>
-                </tr>
-                <tr>
-                  <td>Sat</td>
-                  <td>8am - 8pm</td>
-                </tr>
-                <tr>
-                  <td>Sun</td>
-                  <td>10am - 4pm</td>
-                </tr>
-              </table>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <!-- Form Modals (This code is repeated in index.html, classes.html & services.html)-->
-    <!-- Modal code taken from Bootstrap documentation - https://getbootstrap.com/docs/4.5/components/modal/ & modified -->
-    <!-- TELL ME MORE BUTTON -->
+         </div>
+      </footer>
+      <!-- Form Modals (This code is repeated in index.html, classes.html & services.html)-->
+      <!-- Modal code taken from Bootstrap documentation - https://getbootstrap.com/docs/4.5/components/modal/ & modified -->
+      <!-- TELL ME MORE BUTTON -->
       <div class="modal fade" id="tellMeMore" tabindex="-1" role="dialog" aria-labelledby="tellMeMoreTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="tellMeMoreTitle">INFORMATION REQUEST FORM</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
+         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="tellMeMoreTitle">INFORMATION REQUEST FORM</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <form onsubmit="alert('Thank you for your request. A member of the team will be in touch soon')">
+                     <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" required>
+                     </div>
+                     <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" required>
+                     </div>
+                     <div class="form-group">
+                        <label for="contactNumber">Contact Number</label>
+                        <input type="tel" class="form-control" id="contactNumber" name="contactNumber" required>
+                     </div>
+                     <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter email" required>
+                        <small class="form-text text-muted">We'll never share your email with anyone else.</small>
+                     </div>
+                     <div class="message">
+                        <label for="message">Please enter query below.</label>
+                        <textarea name="message" id="message" rows="4" required></textarea>
+                     </div>
+                     <div class="d-flex justify-content-center mt-4">
+                        <button type="submit"  class="btn btn-success mr-2">Submit</button>
+                        <button type="button" class="btn btn-danger ml-2" data-dismiss="modal">Cancel</button>
+                     </div>
+                  </form>
+               </div>
             </div>
-            <div class="modal-body">
-              <form onsubmit="alert('Thank you for your request. A member of the team will be in touch soon')">
-                <div class="form-group">
-                  <label for="firstName">First Name</label>
-                  <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" required>
-                </div>
-                <div class="form-group">
-                  <label for="lastName">Last Name</label>
-                  <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" required>
-                </div>
-                <div class="form-group">
-                  <label for="contactNumber">Contact Number</label>
-                  <input type="tel" class="form-control" id="contactNumber" name="contactNumber" required>
-                </div>
-                <div class="form-group">
-                  <label for="email">Email address</label>
-                  <input type="email" class="form-control" id="email" name="email" placeholder="Enter email" required>
-                  <small class="form-text text-muted">We'll never share your email with anyone else.</small>
-                </div>
-                <div class="message">
-                  <label for="message">Please enter query below.</label>
-                  <textarea name="message" id="message" rows="4" required></textarea>
-                </div>
-                <div class="d-flex justify-content-center mt-4">
-                  <button type="submit"  class="btn btn-success mr-2">Submit</button>
-                  <button type="button" class="btn btn-danger ml-2" data-dismiss="modal">Cancel</button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
+         </div>
       </div>
       <!-- /TELL ME MORE BUTTON -->
-
       <!-- JOIN NOW BUTTON -->
       <div class="modal fade" id="joinNow" tabindex="-1" role="dialog" aria-labelledby="joinNowTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="joinNowTitle">JOINING FORM</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
+         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="joinNowTitle">JOINING FORM</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <form onsubmit="alert('Thank you for joining! A member of the team will be in touch soon to discuss your induction')">
+                     <div class="form-group">
+                        <label for="firstName2">First Name</label>
+                        <input type="text" class="form-control" id="firstName2" name="firstName" placeholder="First Name" required>
+                     </div>
+                     <div class="form-group">
+                        <label for="lastName2">Last Name</label>
+                        <input type="text" class="form-control" id="lastName2" name="lastName" placeholder="Last Name" required>
+                     </div>
+                     <div class="form-group">
+                        <label for="dateOfBirth">Date of Birth</label>
+                        <input type="date" class="form-control" id="dateOfBirth" name="dateOfBirth" required>
+                     </div>
+                     <p>Gender</p>
+                     <div class="form-group gender">
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">Other</label><br>
+                     </div>
+                     <div class="form-group">
+                        <label for="contactNumber2">Contact Number</label>
+                        <input type="tel" class="form-control" id="contactNumber2" name="contactNumber" required>
+                     </div>
+                     <div class="form-group">
+                        <label for="email2">Email address</label>
+                        <input type="email" required  class="form-control" id="email2" name="email" placeholder="Enter email">
+                        <small class="form-text text-muted">We'll never share your email with anyone else.</small>
+                     </div>
+                     <div class="form-group">
+                        <label for="password1">Password</label>
+                        <input type="password" class="form-control" id="password1" name="password" placeholder="Password" required>
+                     </div>
+                     <div class="form-group">
+                        <label for="password2">Repeat Password</label>
+                        <input type="password" class="form-control" id="password2" name="password" placeholder="Repeat Password" required>
+                     </div>
+                     <div class="d-flex justify-content-center mt-4">
+                        <button type="submit"  class="btn btn-success mr-2">Submit</button>
+                        <button type="button" class="btn btn-danger ml-2" data-dismiss="modal">Cancel</button>
+                     </div>
+                  </form>
+               </div>
             </div>
-            <div class="modal-body">
-              <form onsubmit="alert('Thank you for joining! A member of the team will be in touch soon to discuss your induction')">
-                <div class="form-group">
-                  <label for="firstName2">First Name</label>
-                  <input type="text" class="form-control" id="firstName2" name="firstName" placeholder="First Name" required>
-                </div>
-                <div class="form-group">
-                  <label for="lastName2">Last Name</label>
-                  <input type="text" class="form-control" id="lastName2" name="lastName" placeholder="Last Name" required>
-                </div>
-                <div class="form-group">
-                  <label for="dateOfBirth">Date of Birth</label>
-                  <input type="date" class="form-control" id="dateOfBirth" name="dateOfBirth" required>
-                </div>
-                <p>Gender</p>
-                <div class="form-group gender">
-                  <input type="radio" id="male" name="gender" value="male">
-                  <label for="male">Male</label>
-                  <input type="radio" id="female" name="gender" value="female">
-                  <label for="female">Female</label>
-                  <input type="radio" id="other" name="gender" value="other">
-                  <label for="other">Other</label><br>
-                </div>
-                <div class="form-group">
-                  <label for="contactNumber2">Contact Number</label>
-                  <input type="tel" class="form-control" id="contactNumber2" name="contactNumber" required>
-                </div>
-                <div class="form-group">
-                  <label for="email2">Email address</label>
-                  <input type="email" required  class="form-control" id="email2" name="email" placeholder="Enter email">
-                  <small class="form-text text-muted">We'll never share your email with anyone else.</small>
-                </div>
-                <div class="form-group">
-                  <label for="password1">Password</label>
-                  <input type="password" class="form-control" id="password1" name="password" placeholder="Password" required>
-                </div>
-                <div class="form-group">
-                  <label for="password2">Repeat Password</label>
-                  <input type="password" class="form-control" id="password2" name="password" placeholder="Repeat Password" required>
-                </div>
-                <div class="d-flex justify-content-center mt-4">
-                  <button type="submit"  class="btn btn-success mr-2">Submit</button>
-                  <button type="button" class="btn btn-danger ml-2" data-dismiss="modal">Cancel</button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
+         </div>
       </div>
       <!-- /JOIN NOW BUTTON -->
       <!-- /Form Modals -->
-
-  </body>
+   </body>
 </html>

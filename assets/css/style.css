@@ -134,7 +134,7 @@ hr {
 
 .carousel-control-prev,
 .carousel-control-next {
-    width: 5%;
+    width: 25%;
 }
 
 
@@ -430,8 +430,11 @@ footer {
     td.second-col {
         padding-left: 110px;
     }
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 15%;
+    }
 }
-
 
 /* Laptop with MDPI */
 
@@ -462,17 +465,25 @@ footer {
         height: 310px;
         width: 100%;
     }
-    .carousel-inner .row {
-        height: 200px;
-    }
     .card:hover .overlay {
         opacity: 0;
     }
     .card:hover .text {
         visibility: hidden;
     }
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 10%;
+    }
 }
 
+/* Bootstrap Large / Medium Break point */
+
+@media screen and (max-width: 992px) {
+    .carousel-inner .row {
+        height: 450px;
+    }
+}
 
 /* IPAD PRO 10.5*/
 
@@ -529,9 +540,6 @@ footer {
         font-size: 16px;
         line-height: 35px;
     }
-    .carousel-inner .row {
-        height: 220px;
-    }
 }
 
 
@@ -541,9 +549,6 @@ footer {
     th.second-col,
     td.second-col {
         padding-left: 53vw;
-    }
-    .carousel-inner .row {
-        height: 250px;
     }
 }
 
@@ -578,14 +583,14 @@ footer {
     td.second-col {
         padding-left: 75vw;
     }
-    .carousel-inner .row {
-        height: 450px;
-    }
     .home-image-1 {
         -o-object-fit: cover;
         object-fit: cover;
         height: 310px;
         width: 100%;
+    }
+    .carousel-inner .row {
+        height: 550px;
     }
 }
 
@@ -607,19 +612,16 @@ footer {
     .home-image-1 {
         -o-object-fit: cover;
         object-fit: cover;
-        height: 300px;
+        height: 260px;
         width: 100%;
     }
     .home-image-2 {
         -o-object-fit: cover;
         object-fit: cover;
-        -o-object-position: -160px;
-        object-position: -160px;
-        height: 300px;
+        -o-object-position: -80px;
+        object-position: -80px;
+        height: 260px;
         width: 100%;
-    }
-    .carousel-inner .row {
-        height: 510px;
     }
 }
 
@@ -671,6 +673,9 @@ footer {
     td.second-col {
         padding-left: 225vw;
     }
+    footer .list-inline-item {
+        margin: 0 10px;
+  }
 }
 
 
@@ -681,4 +686,7 @@ footer {
     td.second-col {
         padding-left: 330vw;
     }
+    footer .list-inline-item {
+        margin: 0 10px;
+  }
 }
