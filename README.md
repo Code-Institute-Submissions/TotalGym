@@ -118,7 +118,7 @@ The final checks included:
 
     &nbsp;
 
-    ![alt text](/assets/images/navbar.jpg "Navigation Bar" =450x)
+    <img src="/assets/images/navbar.jpg" width="450" alt="Navigation Bar">
 
     &nbsp;
 
@@ -128,7 +128,7 @@ The final checks included:
 
     &nbsp;
 
-    ![alt text](/assets/images/social_links.jpg "Social Media Links" =250x)
+    <img src="/assets/images/social_links.jpg" width="250" alt="Social Media Links">
 
     &nbsp;
 
@@ -138,8 +138,8 @@ The final checks included:
 
     &nbsp;
 
-    ![alt text](/assets/images/tell_me_more_form.jpg  "Tell Me More Form" =400x)
-    ![alt text](/assets/images/join_now_form.jpg  "Join Now Form" =400x)  
+    <img src="/assets/images/tell_me_more_form.jpg" width="400" alt="Tell Me More Form">
+    <img src="/assets/images/join_now_form.jpg" width="400" alt="Join Now Form">  
 
     &nbsp;
 
@@ -147,8 +147,8 @@ The final checks included:
 
     &nbsp;
 
-    ![alt text](/assets/images/info_request_submit_fail.jpg  "Tell Me More Validation check" =400x)
-    ![alt text](/assets/images/join_now_form_fail.jpg  "Join Now More Form Validation check" =400x)
+    <img src="/assets/images/info_request_submit_fail.jpg" width="400" alt="Tell Me More Validation check">
+    <img src="/assets/images/join_now_form_fail.jpg" width="400" alt="Join Now More Form Validation check">
 
     &nbsp;
 
@@ -157,7 +157,8 @@ The final checks included:
     &nbsp;
 
     ![alt text](/assets/images/more_info_confirmed.jpg  "Tell Me More Submission" =400x)
-    ![alt text](/assets/images/joining_confirmation.jpg  "Join Now More Form Submission" =400x)
+    <img src="/assets/images/more_info_confirmed.jpg" width="400" alt="Tell Me More Submission">
+    <img src="/assets/images/joining_confirmation.jpg" width="400" alt="Join Now More Form Submission">
 
   - ##### Clickable images.
 
@@ -166,20 +167,22 @@ The final checks included:
     &nbsp;
 
     ###### Hover effect
-    ![alt text](/assets/images/cardio_hover.jpg  "Cardio Image Hover effect" =400x)  
+    <img src="/assets/images/cardio_hover.jpg" width="400" alt="Cardio Image Hover effect">  
 
     ###### Modal Popup
-    ![alt text](/assets/images/cardio_modal.jpg  "Cardio Modal popup" =500x)
+    <img src="/assets/images/cardio_modal.jpg" width="400" alt="Cardio Modal popup">
 
-  - ###### Class Timetable
+    &nbsp; 
+
+  - ##### Class Timetable
 
     The Class Timetable was tested to ensure that the scroll function enabled full visibility of the timetable. Further testing was also conducted on multiple screen sizes to ensure that the timetable maintained usability.
 
     &nbsp;
 
-    ![alt text](/assets/images/class_timetable.jpg  "Cardio Image Hover effect" =700x)  
+    <img src="/assets/images/class_timetable.jpg" width="700" alt="Class Timetable">
 
-
+     &nbsp;
 - #### Responsive / Device testing
   The following devices were used to test the site:
     - 24" Monitor
