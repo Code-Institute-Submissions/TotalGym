@@ -20,6 +20,8 @@ As a user I would like:
 - To find out how much the membership costs.
 - To be able to check class times.
 
+&nbsp;
+
 ### Design
 - #### Wireframes
   The website was initially designed using Balsamiq to create several wireframes (link below).
@@ -52,6 +54,7 @@ ___
 - The site Footer for all pages contains social media links.
 - Site is fully responsive for all screen sizes.
 
+&nbsp;
 
 ### Features Left to Implement
 Members area containing the following:
@@ -94,12 +97,18 @@ ___
 ### Pre-Deployment
 Throughout the development of this site, it was previewed locally as each new element was added, and also, the built-in browser developer tools for Chrome, Edge, Safari and Firefox were used to ensure that the layout was responsive for all screen sizes.
 
+&nbsp;
+
 ### Post-Deployment
 Once the main structure of the site was complete it was deployed to GitHub Pages to test it on actual devices. This revealed some behaviour that had not been seen when using the developer tools responsive utility, such as, hover effects appearing when touching images on mobile devices.
+
+&nbsp;
 
 ### Issues found and fixed
 - Class Timetable formatting - Due to the use of sticky cells, when the screen is resized some cells disappear under the sticky cells. This was resolved by using CSS media queries for all known screen sizes.
 - Image Hover effects appearing and persisting after touching images on touchscreen devices. Resolved by removing Hover effects for screen sizes of 1024px and below.
+
+&nbsp;
 
 ### Final checks
 
