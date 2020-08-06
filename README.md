@@ -22,7 +22,7 @@ As a user I would like:
 
 ### Design
 - #### Wireframes
-  The website was initially designed using Balsamiq to create the several wireframes (link below).
+  The website was initially designed using Balsamiq to create several wireframes (link below).
 \
 \
 [Wireframes](/assets/wireframes/wireframes.md)
@@ -35,6 +35,10 @@ As a user I would like:
     - Black - page backgrounds, Navigation Bar and Footer.
     - Green - Total Gym logo background, buttons, Class Timetable and Navigation Bar hover and active page effects and Footer hover effects.
     - White - Total Gym logo text, site text and borders.
+
+- #### Code Rationale
+    After deciding to use Modals for the forms, it became apparent that the code would need to be duplicated on every page to have the buttons available on every page. HTML templates were considered as a way of preventing the code duplication, but this would have required additional JavaScript code. Therefore, the decision was made to duplicate the code and add comments to make it clear that the code is duplicated on the other pages.
+
 ___
 
 ## Features
@@ -52,7 +56,7 @@ ___
 ### Features Left to Implement
 Members area containing the following:
   - Activity tracker
-  - Diet plan / tracker
+  - Diet plan/tracker
   - Workout plan
   - Discounted in house products
   - Home workout videos
@@ -69,7 +73,7 @@ ___
 ### Frameworks and Programs
 
 - [Bootstrap 4.5.0](https://getbootstrap.com/docs/4.5/getting-started/introduction/)
-  - Many features of Bootstrap were used make the site responsive.
+  - Many features of Bootstrap were used to make the site responsive.
 - [JQuery](https://jquery.com)
     - Used to implement some of the Bootstrap features such as NavBar and Modals.
 - [Atom](https://atom.io/)
@@ -88,13 +92,13 @@ ___
 ## Testing
 
 ### Pre-Deployment
-Throughout the development of this site it was previewed locally as each new element was added, and in addition, the built-in browser developer tools for Chrome, Edge, Safari and Firefox were used to ensure that the layout was responsive for all screen sizes.
+Throughout the development of this site, it was previewed locally as each new element was added, and also, the built-in browser developer tools for Chrome, Edge, Safari and Firefox were used to ensure that the layout was responsive for all screen sizes.
 
 ### Post-Deployment
-Once the main structure of the site was complete it was deployed to GitHub Pages in order to test it on actual devices. This revealed some behaviour that had not been seen when using the developer tools responsive utility, such as, hover effects appearing when touching images on mobile devices.
+Once the main structure of the site was complete it was deployed to GitHub Pages to test it on actual devices. This revealed some behaviour that had not been seen when using the developer tools responsive utility, such as, hover effects appearing when touching images on mobile devices.
 
 ### Issues found and fixed
-- Class Timetable formatting - Due to the use of sticky cells, when the screen is resized some cells disappear under the sticky cells. This was resolved by using CSS Media queries for all known screen sizes.
+- Class Timetable formatting - Due to the use of sticky cells, when the screen is resized some cells disappear under the sticky cells. This was resolved by using CSS media queries for all known screen sizes.
 - Image Hover effects appearing and persisting after touching images on touchscreen devices. Resolved by removing Hover effects for screen sizes of 1024px and below.
 
 ### Final checks
@@ -109,11 +113,72 @@ The final checks included:
 
 - #### Feature testing
   The following items were checked and verified:
-  - Navigation Bar page links on every page.
-  - Social media links on every page.
-  - Form buttons and form data input behaviour on every page.
-  - Clickable images.
-  - Class Timetable scroll functionality.
+  - ##### Navigation Bar page links
+    The Navigation links were tested for the following; hover effect to ensure that the colour changes to green, current active page link is coloured green and that each link opens the correct page.
+
+    &nbsp;
+
+    ![alt text](/assets/images/navbar.jpg "Navigation Bar" =450x)
+
+    &nbsp;
+
+  - ##### Social media links
+
+    On every page of the site, each Social Media icon was tested for hover effect and clicked to ensure that a new tab opened with the corresponding Social Media website.
+
+    &nbsp;
+
+    ![alt text](/assets/images/social_links.jpg "Social Media Links" =250x)
+
+    &nbsp;
+
+  - ##### Form buttons and form data input behaviour
+
+    Both form Buttons were clicked on every page to ensure that the form modals opened correctly. And the forms were tested for data validation and successful submission.
+
+    &nbsp;
+
+    ![alt text](/assets/images/tell_me_more_form.jpg  "Tell Me More Form" =400x)
+    ![alt text](/assets/images/join_now_form.jpg  "Join Now Form" =400x)  
+
+    &nbsp;
+
+    ###### Input Required Validation check
+
+    &nbsp;
+
+    ![alt text](/assets/images/info_request_submit_fail.jpg  "Tell Me More Validation check" =400x)
+    ![alt text](/assets/images/join_now_form_fail.jpg  "Join Now More Form Validation check" =400x)
+
+    &nbsp;
+
+    ###### Successful Submission test
+
+    &nbsp;
+
+    ![alt text](/assets/images/more_info_confirmed.jpg  "Tell Me More Submission" =400x)
+    ![alt text](/assets/images/joining_confirmation.jpg  "Join Now More Form Submission" =400x)
+
+  - ##### Clickable images.
+
+    Every image on the Classes and Facilities pages was tested for hover effect and modal popup when clicked. The close buttons and close (X) icons were also tested for every modal.
+
+    &nbsp;
+
+    ###### Hover effect
+    ![alt text](/assets/images/cardio_hover.jpg  "Cardio Image Hover effect" =400x)  
+
+    ###### Modal Popup
+    ![alt text](/assets/images/cardio_modal.jpg  "Cardio Modal popup" =500x)
+
+  - ###### Class Timetable
+
+    The Class Timetable was tested to ensure that the scroll function enabled full visibility of the timetable. Further testing was also conducted on multiple screen sizes to ensure that the timetable maintained usability.
+
+    &nbsp;
+
+    ![alt text](/assets/images/class_timetable.jpg  "Cardio Image Hover effect" =700x)  
+
 
 - #### Responsive / Device testing
   The following devices were used to test the site:
@@ -121,13 +186,33 @@ The final checks included:
     - 15.6" Laptop Display
     - 10" Galaxy Tab 4.0 (Portrait and Landscape)
     - 5.8" Samsung S8 (Portrait and Landscape)
-    - 4.7" IPhone 8 (Portrait and Landscape)
+    - 4.7" iPhone 8 (Portrait and Landscape)
+
+- #### User Stories check
+
+  Does this website successfully fulfil the requirements laid out in the original User Stories?
+
+  The site owner requirements
+  - To inform new customers about everything Total Gym has to offer.
+    - Yes - All of the facilities and Services have been detailed on the website.
+  - To provide a facility for customers to make enquiries via the website.
+    - Yes - The 'Tell Me More' button (featured on every page) enables users to open a form to request more information.
+  - To give new and existing members information about our classes and class times.
+    - Yes - The Classes page contains details about all of the classes and includes a class Timetable for users to check class times.
+
+  The user requirements
+  - To find out what facilities and services are available.
+    - Yes - All available facilities and services are included on the Facilities and Services pages.
+  - To find out how much the membership costs.
+    - Yes - The 'Tell Me More' button can be used for information requests of this nature.
+  - To be able to check class times.
+    - Yes - Class times are detailed in the Class Timetable.
 ___
 
 ## Deployment
 
 The site was deployed to GitHub pages by following the below steps:
-- Login to repository - https://github.com/phil-griffith/TotalGym/
+- Log in to the repository - https://github.com/phil-griffith/TotalGym/
 - Click <b>Settings</b>
 - Scroll down to <b>GitHub Pages</b>
 - Set Source to <b>Branch:master</b>
@@ -139,13 +224,13 @@ ___
 ### Content
 Some of the content for this website was taken from the following sources:
 - The text for the Yoga Modal
-  - [nhs.uk](https://www.nhs.uk/live-well/exercise/guide-to-yoga/)
+  - [NHS.uk](https://www.nhs.uk/live-well/exercise/guide-to-yoga/)
 - The text for the HIIT Modal
-  - [wikipedia](https://en.wikipedia.org/wiki/High-intensity_interval_training)
+  - [Wikipedia](https://en.wikipedia.org/wiki/High-intensity_interval_training)
 - The text for the Boxercise Modal
-  - [wikipedia](https://en.wikipedia.org/wiki/Boxercise)
+  - [Wikipedia](https://en.wikipedia.org/wiki/Boxercise)
 - The text for the Pilates Modal
-  - [nhs.uk](https://www.nhs.uk/live-well/exercise/guide-to-pilates/)
+  - [NHS.uk](https://www.nhs.uk/live-well/exercise/guide-to-pilates/)
 - The text for the Spin Modal
   - [cyclingweekly.com](https://www.cyclingweekly.com/fitness/spin-classes-fad-or-fab-36077#:~:text=A%20spin%20class%20is%20a,pressure%20to%20slow%20them%20down.)
 - The text for the Aqua Modal
@@ -190,7 +275,7 @@ The images for this website were taken from the following sources:
   - Free Weights  
     - [google.com](https://lh3.googleusercontent.com/proxy/nFx24NYiOZMNkaelGstTFpKfzLxuQmcdkyCg8H2ZmP9aVo_2elK-3LtrVri-yp1uSIZt87QEVyHgYVJcPU5bWOVuKSMuY5ertsVrgK0dW6XGaA)
   - Weight Machines
-    - [tripadvisor](https://www.tripadvisor.com/LocationPhotoDirectLink-g187049-d191626-i272112273-Village_Hotel_Swindon-Swindon_Wiltshire_England.html)
+    - [tripadvisor.co.uk](https://www.tripadvisor.com/LocationPhotoDirectLink-g187049-d191626-i272112273-Village_Hotel_Swindon-Swindon_Wiltshire_England.html)
   - Studio
     - [google.co.uk](https://www.google.co.uk/url?sa=i&url=https%3A%2F%2Fwww.nuffieldhealth.com%2Fgyms%2Fpreston&psig=AOvVaw3Y88Ydszp6ydYI2nRX7BbC&ust=1596459760086000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCJCmk5nK_OoCFQAAAAAdAAAAABAD)
    - Refreshments
