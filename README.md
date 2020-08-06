@@ -156,7 +156,6 @@ The final checks included:
 
     &nbsp;
 
-    ![alt text](/assets/images/more_info_confirmed.jpg  "Tell Me More Submission" =400x)
     <img src="/assets/images/more_info_confirmed.jpg" width="400" alt="Tell Me More Submission">
     <img src="/assets/images/joining_confirmation.jpg" width="400" alt="Join Now More Form Submission">
 
@@ -172,7 +171,7 @@ The final checks included:
     ###### Modal Popup
     <img src="/assets/images/cardio_modal.jpg" width="400" alt="Cardio Modal popup">
 
-    &nbsp; 
+    &nbsp;
 
   - ##### Class Timetable
 
