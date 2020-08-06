@@ -159,6 +159,8 @@ The final checks included:
     <img src="/assets/images/more_info_confirmed.jpg" width="400" alt="Tell Me More Submission">
     <img src="/assets/images/joining_confirmation.jpg" width="400" alt="Join Now More Form Submission">
 
+    &nbsp;
+
   - ##### Clickable images.
 
     Every image on the Classes and Facilities pages was tested for hover effect and modal popup when clicked. The close buttons and close (X) icons were also tested for every modal.
@@ -190,6 +192,8 @@ The final checks included:
     - 5.8" Samsung S8 (Portrait and Landscape)
     - 4.7" iPhone 8 (Portrait and Landscape)
 
+    &nbsp;
+
 - #### User Stories check
 
   Does this website successfully fulfil the requirements laid out in the original User Stories?
@@ -209,6 +213,9 @@ The final checks included:
     - Yes - The 'Tell Me More' button can be used for information requests of this nature.
   - To be able to check class times.
     - Yes - Class times are detailed in the Class Timetable.
+
+    &nbsp;
+
 ___
 
 ## Deployment
@@ -219,6 +226,9 @@ The site was deployed to GitHub pages by following the below steps:
 - Scroll down to <b>GitHub Pages</b>
 - Set Source to <b>Branch:master</b>
 - Click <b>Save</b>
+
+&nbsp;
+
 ___
 
 ## Credits
@@ -240,6 +250,8 @@ Some of the content for this website was taken from the following sources:
 - The text for the Free Weights Modal
   - [totalfitness.co.uk](https://www.totalfitness.co.uk/facilities-pages/free-weights-area/)
 
+&nbsp;
+
 ### Code
 Some of the code for this website was taken from the following sources:
 - Navigation Bar
@@ -253,6 +265,8 @@ Some of the code for this website was taken from the following sources:
   - https://getbootstrap.com/docs/4.5/components/card/
 - Image Hover overlay
   - https://www.w3schools.com/howto/howto_css_image_overlay.asp
+
+&nbsp;
 
 ### Media
 The images for this website were taken from the following sources:
@@ -306,6 +320,8 @@ The images for this website were taken from the following sources:
     - [chi.ac.uk](https://www.chi.ac.uk/chichester-institute-sport/our-courses/undergraduate/bsc-hons-physiotherapy)
   - Nutritional Adviser
     - [punjabkesari.in](https://www.punjabkesari.in/education-and-jobs/news/food-nutritionist-will-get-his-career-opportunities-to-move-forward-1034000)
+
+&nbsp;
 
 ### Acknowledgements
 I would like to thank my Mentor Aaron Sinnott for the advice that he has given me.
