@@ -333,7 +333,7 @@ The images for this website were taken from the following sources:
 &nbsp;
 
 ### Acknowledgements
-I would like to thank my Mentor Aaron Sinnott for the advice that he has given me.
+I would like to thank my Mentor Aaron Sinnott for the advice that he has given me, and also Jess Bennett, Stephen Robinson and Mark OBeirne for their feedback.
 - I received inspiration for this project from:
   - https://activ8fitnessclubs.co.uk/
   - https://www.nuffieldhealth.com/
